@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 65fa7bc4320e32e47a0afff431355053
+timeCreated: 1506978869
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Dalelands Uncial
+  fontNames:
+  - Dalelands Uncial
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
