@@ -25,7 +25,11 @@ public class Ficha : MonoBehaviour
     public InputField vinculoInput;
     [Space(15)]
 
+    public Text equipamentoInicial;
+
+    [Space(15)]
     public Text danoText;
+
     [Space(15)]
     public List<Classe> classeList;
 
@@ -65,6 +69,7 @@ public class Ficha : MonoBehaviour
     {
         CarregarDicionarios();
         CarregarDano();
+        CarregarTextoEquipamentoInicial();
     }
 
     public void CalcularAtributos()
@@ -185,5 +190,10 @@ public class Ficha : MonoBehaviour
     public void AdicionarVinculoTemplate()
     {
         vinculoInput.text = GameManager.instance.classeSelecionada.vinculoTemplate;
+    }
+
+    public void CarregarTextoEquipamentoInicial()
+    {
+        equipamentoInicial.text = GameManager.instance.classeSelecionada.equipamentoDeComeco;
     }
 }

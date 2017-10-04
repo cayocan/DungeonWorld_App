@@ -6,7 +6,7 @@ using UnityEngine;
 public class Raca
 {
     public Racas racaEnum;
-    [TextArea]
+    [TextArea(0, 10)]
     public string descricao;
 
     public enum Racas

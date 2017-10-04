@@ -14,8 +14,13 @@ public class Classe{
     public List<Raca> racasList;
 
     [Space(10)]
-    [TextArea]
+    [TextArea(0, 15)]
     public string vinculoTemplate;
+
+    [Space(10)]
+    [TextArea(0, 15)]
+    public string equipamentoDeComeco;
+    public Dictionary<string, string> equipamentoDictionary = new Dictionary<string, string>();
 
     [Space(10)]
     public List<Movimento> movimentoList;
