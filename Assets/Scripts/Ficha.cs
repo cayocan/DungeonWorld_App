@@ -6,6 +6,8 @@ using System;
 
 public class Ficha : MonoBehaviour
 {
+    public static Ficha instance;
+
     public InputField forInput;
     public List<Atributo> atributoList;
     [Space(15)]
@@ -26,14 +28,34 @@ public class Ficha : MonoBehaviour
     [Space(15)]
 
     public Text equipamentoInicial;
-
     [Space(15)]
+
+    public GameObject movimentosIniciaisElement;
+    public Text movimentosIniciaisText;
+    public GameObject fichaMovimentosIniciaisGrid;
+    public GameObject movimentosIniciaisGrid;
+    [Space(15)]
+
     public Text danoText;
-
     [Space(15)]
+    
     public List<Classe> classeList;
 
 
+    private void Awake()
+    {
+        //Singleton statement.
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
+    
 
     private void OnEnable()
     {
@@ -49,6 +71,9 @@ public class Ficha : MonoBehaviour
 
         CarregarDicionarios();
         CarregarDano();
+
+        CarregarTextoMovimentosIniciais();
+        CarregarMovimentosIniciais();
     }
 
     private void OnDisable()
@@ -60,16 +85,15 @@ public class Ficha : MonoBehaviour
         }
     }
 
-    public void Awake()
-    {
-
-    }
-
     private void Start()
     {
         CarregarDicionarios();
         CarregarDano();
+
         CarregarTextoEquipamentoInicial();
+        CarregarTextoMovimentosIniciais();
+
+        CarregarMovimentosIniciais();
     }
 
     public void CalcularAtributos()
@@ -196,4 +220,39 @@ public class Ficha : MonoBehaviour
     {
         equipamentoInicial.text = GameManager.instance.classeSelecionada.equipamentoDeComeco;
     }
+
+    public void CarregarTextoMovimentosIniciais()
+    {
+        movimentosIniciaisText.text = GameManager.instance.classeSelecionada.textMovimentosIniciais;
+    }
+
+    public void CarregarMovimentosIniciais()
+    {
+        int cont = 0;
+        //Limpa a grid de movimentos iniciais
+        foreach (Transform item in movimentosIniciaisGrid.transform)
+        {
+            if (cont != 0)
+            {
+                Destroy(item.gameObject);
+            }
+            cont++;
+        }
+
+        //Carrega a grid de movimentos iniciais da raça escolhida
+
+        GameObject obj = new GameObject();
+        MovimentosIniciaisHelper helper;
+
+        foreach (var item in GameManager.instance.classeSelecionada.movimentosIniciaisList)
+        {
+            obj = Instantiate(movimentosIniciaisElement, movimentosIniciaisGrid.transform);
+            helper = obj.GetComponent<MovimentosIniciaisHelper>();
+
+            helper.nameText.text = item.nome;
+            helper.descriptionText.text = item.descricao;
+        }
+
+    }
+
 }

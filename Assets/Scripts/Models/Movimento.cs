@@ -6,6 +6,6 @@ using UnityEngine;
 public class Movimento
 {
     public string nome;
-    [TextArea]
+    [TextArea(0, 15)]
     public string descricao;
 }

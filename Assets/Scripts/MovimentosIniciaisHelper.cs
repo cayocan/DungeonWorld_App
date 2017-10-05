@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EquipmentHelper : MonoBehaviour
-{
+public class MovimentosIniciaisHelper : MonoBehaviour {
+
     public Text nameText;
     public Text descriptionText;
-    public GameObject equipFichaElement;
+    public GameObject movimentoInicialFichaElement;
 
 
-    public void AddEquipment()
+    public void AddInitialMovement()
     {
-        GameObject obj = Instantiate(equipFichaElement, Equipamento.instance.equipFichaGrid.gameObject.transform);
-        EquipmentHelper helper = obj.GetComponent<EquipmentHelper>();
+        GameObject obj = Instantiate(movimentoInicialFichaElement, Ficha.instance.fichaMovimentosIniciaisGrid.gameObject.transform);
+        MovimentosIniciaisHelper helper = obj.GetComponent<MovimentosIniciaisHelper>();
 
         helper.nameText.text = nameText.text;
         helper.descriptionText.text = descriptionText.text;

@@ -20,13 +20,24 @@ public class Classe{
     [Space(10)]
     [TextArea(0, 15)]
     public string equipamentoDeComeco;
-    public Dictionary<string, string> equipamentoDictionary = new Dictionary<string, string>();
 
     [Space(10)]
-    public List<Movimento> movimentoList;
+    [TextArea(0, 15)]
+    public string textMovimentosIniciais;
+
+    [Space(5)]
+    public List<Movimento> movimentosIniciaisList;
+    public List<Movimento> movimentosAvancadosList;
+
+
+
+    public Dictionary<string, string> equipamentoDictionary = new Dictionary<string, string>();
 
     public Dictionary<string, string> racaDictionary = new Dictionary<string, string>();
     public Dictionary<string, string> alinhamentoDictionary = new Dictionary<string, string>();
+
+    public Dictionary<string, string> movimentoDictionary = new Dictionary<string, string>();
+    public Dictionary<string, string> movimentoAvancadoDictionary = new Dictionary<string, string>();
 
     public enum Classes
     {
@@ -43,9 +54,13 @@ public class Classe{
 
     public void SignDictionaries()
     {
+        alinhamentoDictionary.Clear();
+        racaDictionary.Clear();
+
         foreach (Alinhamento alinhamento in alinhamentosList)
         {
             alinhamentoDictionary.Add(alinhamento.alinhamentoEnum.ToString(), alinhamento.descricao);
+            
         }
 
         foreach (Raca raca in racasList)

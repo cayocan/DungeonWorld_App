@@ -5,10 +5,15 @@ using UnityEngine.UI;
 
 public class Equipamento : MonoBehaviour
 {
+    public static Equipamento instance;
+
     public GameObject equipElement;
     [Space(10)]
 
     public GameObject equipFichaGrid;
+    [Space(10)]
+
+    public GameObject customEquip;
     [Space(10)]
 
     public GameObject armasGrid;
@@ -29,6 +34,17 @@ public class Equipamento : MonoBehaviour
 
     public void Awake()
     {
+        //Singleton statement.
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         #region Armas
 
         armasDictionary.Add("Arco Rústico", "próximo, 15 moedas, peso 2");
@@ -200,6 +216,11 @@ public class Equipamento : MonoBehaviour
         }
 
         alreadyLoad = true;
+    }
+
+    public void AddCustomEquip()
+    {
+        GameObject obj = Instantiate(customEquip, Equipamento.instance.equipFichaGrid.gameObject.transform);
     }
 
 }
