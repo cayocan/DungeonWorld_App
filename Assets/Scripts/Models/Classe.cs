@@ -24,9 +24,13 @@ public class Classe{
     [Space(10)]
     [TextArea(0, 15)]
     public string textMovimentosIniciais;
-
     [Space(5)]
     public List<Movimento> movimentosIniciaisList;
+
+    [Space(10)]
+    [TextArea(0, 15)]
+    public string textMovimentosAvancados;
+    [Space(5)]
     public List<Movimento> movimentosAvancadosList;
 
 

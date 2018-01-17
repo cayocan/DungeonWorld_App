@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 222144492594265252}
   - component: {fileID: 114831356747884932}
   m_Layer: 0
-  m_Name: MovimentoInicialName
+  m_Name: MovimentoAvancadolName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,9 +55,9 @@ GameObject:
   - component: {fileID: 224598866178714512}
   - component: {fileID: 222605031061912288}
   - component: {fileID: 114771032943142176}
-  - component: {fileID: 114656767584672428}
+  - component: {fileID: 114741339224505702}
   m_Layer: 0
-  m_Name: MovimentoInicialElement
+  m_Name: MovimentoAvancadoElement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 114776074194371050}
   - component: {fileID: 114555317957646040}
   m_Layer: 0
-  m_Name: MovimentoInicialAdd_Button
+  m_Name: MovimentoAvancadoAdd_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -137,8 +137,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114656767584672428}
-        m_MethodName: AddInitialMovement
+      - m_Target: {fileID: 114741339224505702}
+        m_MethodName: AddAdvancedMovement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -150,7 +150,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114656767584672428
+--- !u!114 &114741339224505702
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1358956458321510}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc99c55a3038e5b49b264e28e9f2c94b, type: 3}
+  m_Script: {fileID: 11500000, guid: d0728493dd3b68549beea182e56c8a8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 114831356747884932}
@@ -284,7 +284,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Movimento inicial name
+  m_Text: Movimento Avancado name
 --- !u!114 &114990520892278142
 MonoBehaviour:
   m_ObjectHideFlags: 1

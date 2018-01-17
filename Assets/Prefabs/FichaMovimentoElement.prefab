@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 222771407760479870}
   - component: {fileID: 114272686796683238}
   m_Layer: 0
-  m_Name: MovimentoInicialDescription
+  m_Name: MovimentoDescription
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 222878107448749186}
   - component: {fileID: 114631048085450156}
   m_Layer: 0
-  m_Name: MovimentoInicialName
+  m_Name: MovimentoName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,9 +55,9 @@ GameObject:
   - component: {fileID: 224833322390322374}
   - component: {fileID: 222980308705943860}
   - component: {fileID: 114691202145405692}
-  - component: {fileID: 114207433548432684}
+  - component: {fileID: 114248067756949376}
   m_Layer: 0
-  m_Name: FichaMovimentoInicialElement
+  m_Name: FichaMovimentoElement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 114006870009765436}
   - component: {fileID: 114165629577074710}
   m_Layer: 0
-  m_Name: MovimentoInicialDelete_Button
+  m_Name: MovimentoDelete_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114207433548432684}
+      - m_Target: {fileID: 114248067756949376}
         m_MethodName: DestroyElement
         m_Mode: 1
         m_Arguments:
@@ -177,7 +177,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114207433548432684
+--- !u!114 &114248067756949376
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -185,12 +185,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1342105097181214}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc99c55a3038e5b49b264e28e9f2c94b, type: 3}
+  m_Script: {fileID: 11500000, guid: 217b9ce445f26604287cea38da10f62a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 114631048085450156}
   descriptionText: {fileID: 114272686796683238}
-  movimentoInicialFichaElement: {fileID: 0}
 --- !u!114 &114272686796683238
 MonoBehaviour:
   m_ObjectHideFlags: 1

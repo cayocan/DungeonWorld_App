@@ -30,10 +30,16 @@ public class Ficha : MonoBehaviour
     public Text equipamentoInicial;
     [Space(15)]
 
-    public GameObject movimentosIniciaisElement;
+    public GameObject movimentoInicialElement;
     public Text movimentosIniciaisText;
     public GameObject fichaMovimentosIniciaisGrid;
     public GameObject movimentosIniciaisGrid;
+    [Space(15)]
+
+    public GameObject movimentoAvancadoElement;
+    public Text movimentosAvancadosText;
+    public GameObject fichaMovimentosAvancadosGrid;
+    public GameObject movimentosAvancadosGrid;
     [Space(15)]
 
     public Text danoText;
@@ -74,6 +80,9 @@ public class Ficha : MonoBehaviour
 
         CarregarTextoMovimentosIniciais();
         CarregarMovimentosIniciais();
+
+        CarregarTextoMovimentosAvancados();
+        CarregarMovimentosAvancados();
     }
 
     private void OnDisable()
@@ -91,9 +100,13 @@ public class Ficha : MonoBehaviour
         CarregarDano();
 
         CarregarTextoEquipamentoInicial();
-        CarregarTextoMovimentosIniciais();
 
+        CarregarTextoMovimentosIniciais();
         CarregarMovimentosIniciais();
+
+
+        CarregarTextoMovimentosAvancados();
+        CarregarMovimentosAvancados();
     }
 
     public void CalcularAtributos()
@@ -228,26 +241,21 @@ public class Ficha : MonoBehaviour
 
     public void CarregarMovimentosIniciais()
     {
-        int cont = 0;
         //Limpa a grid de movimentos iniciais
         foreach (Transform item in movimentosIniciaisGrid.transform)
         {
-            if (cont != 0)
-            {
-                Destroy(item.gameObject);
-            }
-            cont++;
+            Destroy(item.gameObject);
         }
 
         //Carrega a grid de movimentos iniciais da raça escolhida
 
         GameObject obj = new GameObject();
-        MovimentosIniciaisHelper helper;
+        MovimentosHelper helper;
 
         foreach (var item in GameManager.instance.classeSelecionada.movimentosIniciaisList)
         {
-            obj = Instantiate(movimentosIniciaisElement, movimentosIniciaisGrid.transform);
-            helper = obj.GetComponent<MovimentosIniciaisHelper>();
+            obj = Instantiate(movimentoInicialElement, movimentosIniciaisGrid.transform);
+            helper = obj.GetComponent<MovimentosHelper>();
 
             helper.nameText.text = item.nome;
             helper.descriptionText.text = item.descricao;
@@ -255,4 +263,32 @@ public class Ficha : MonoBehaviour
 
     }
 
+    public void CarregarTextoMovimentosAvancados()
+    {
+        movimentosAvancadosText.text = GameManager.instance.classeSelecionada.textMovimentosAvancados;
+    }
+
+    public void CarregarMovimentosAvancados()
+    {
+        //Limpa a grid de movimentos Avancados
+        foreach (Transform item in movimentosAvancadosGrid.transform)
+        {
+            Destroy(item.gameObject);
+        }
+
+        //Carrega a grid de movimentos Avancados da raça escolhida
+
+        GameObject obj = new GameObject();
+        MovimentosHelper helper;
+
+        foreach (var item in GameManager.instance.classeSelecionada.movimentosAvancadosList)
+        {
+            Debug.Log("Instanciou!");
+            obj = Instantiate(movimentoAvancadoElement, movimentosAvancadosGrid.transform);
+            helper = obj.GetComponent<MovimentosHelper>();
+
+            helper.nameText.text = item.nome;
+            helper.descriptionText.text = item.descricao;
+        }
+    }
 }

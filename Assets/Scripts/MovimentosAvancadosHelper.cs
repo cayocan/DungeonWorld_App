@@ -1,15 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class MovimentosIniciaisHelper : MovimentosHelper
+public class MovimentosAvancadosHelper : MovimentosHelper
 {
     public GameObject movimentoFichaElement;
 
-    public void AddInitialMovement()
+    public void AddAdvancedMovement()
     {
-        GameObject obj = Instantiate(movimentoFichaElement, Ficha.instance.fichaMovimentosIniciaisGrid.gameObject.transform);
+        GameObject obj = Instantiate(movimentoFichaElement, Ficha.instance.fichaMovimentosAvancadosGrid.gameObject.transform);
         MovimentosHelper helper = obj.GetComponent<MovimentosHelper>();
 
         helper.nameText.text = nameText.text;
