@@ -996,6 +996,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1028761457}
+  - {fileID: 1169044208}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1281,6 +1282,74 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 142704466}
+--- !u!1 &143445010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 143445011}
+  - component: {fileID: 143445013}
+  - component: {fileID: 143445012}
+  m_Layer: 0
+  m_Name: Back_Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &143445011
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143445010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 378207260}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &143445012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143445010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 563eb3323d6a25548aee58052f3672c6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &143445013
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143445010}
 --- !u!224 &150814077 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224435469475109068, guid: 6d865dafa63d84c4eaa06bd06983cc21,
@@ -2816,7 +2885,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2835,7 +2904,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1660853695}
-  toggleTransition: 1
+  toggleTransition: 0
   graphic: {fileID: 1158855820}
   m_Group: {fileID: 104892256}
   onValueChanged:
@@ -3352,6 +3421,139 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 333277990}
+--- !u!1 &335707587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 335707588}
+  - component: {fileID: 335707591}
+  - component: {fileID: 335707590}
+  - component: {fileID: 335707589}
+  m_Layer: 0
+  m_Name: Back_Button (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &335707588
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 335707587}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 883545138}
+  m_Father: {fileID: 1941321676}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.05780278, y: 0.9727464}
+  m_AnchorMax: {x: 0.18824343, y: 0.98990023}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &335707589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 335707587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 335707590}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1840411168}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 685647629}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &335707590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 335707587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &335707591
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 335707587}
 --- !u!1 &336980579
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,7 +3918,7 @@ RectTransform:
   - {fileID: 2104502311}
   - {fileID: 1499773375}
   m_Father: {fileID: 685647634}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3833,7 +4035,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3852,7 +4054,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 843247997}
-  toggleTransition: 1
+  toggleTransition: 0
   graphic: {fileID: 1327542560}
   m_Group: {fileID: 104892256}
   onValueChanged:
@@ -3861,6 +4063,139 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
+--- !u!1 &378207259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 378207260}
+  - component: {fileID: 378207263}
+  - component: {fileID: 378207262}
+  - component: {fileID: 378207261}
+  m_Layer: 0
+  m_Name: Back_Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &378207260
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 378207259}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 143445011}
+  m_Father: {fileID: 1499773375}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -315, y: -452.15002}
+  m_SizeDelta: {x: 150, y: 148.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &378207261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 378207259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 378207262}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 685647629}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1403827467}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &378207262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 378207259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &378207263
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 378207259}
 --- !u!1 &384074576
 GameObject:
   m_ObjectHideFlags: 0
@@ -4280,7 +4615,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -4299,7 +4634,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1100798713}
-  toggleTransition: 1
+  toggleTransition: 0
   graphic: {fileID: 183046297}
   m_Group: {fileID: 104892256}
   onValueChanged:
@@ -4377,6 +4712,65 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 411929000}
+--- !u!1 &434986279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 434986281}
+  - component: {fileID: 434986280}
+  m_Layer: 0
+  m_Name: CreateCharacterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &434986280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 434986279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469cfba5b98588e4faab4c19019c4301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charactersToggleList:
+  - classe: 0
+    comboBox: {fileID: 1120406929}
+  - classe: 1
+    comboBox: {fileID: 1930982364}
+  - classe: 2
+    comboBox: {fileID: 2124108105}
+  - classe: 3
+    comboBox: {fileID: 376312775}
+  - classe: 4
+    comboBox: {fileID: 1634249740}
+  - classe: 5
+    comboBox: {fileID: 1665569300}
+  - classe: 6
+    comboBox: {fileID: 297346272}
+  - classe: 7
+    comboBox: {fileID: 410876207}
+  - classe: 8
+    comboBox: {fileID: 1739047932}
+--- !u!4 &434986281
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 434986279}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 685647634}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &442147352
 GameObject:
   m_ObjectHideFlags: 0
@@ -6424,6 +6818,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 434986281}
   - {fileID: 367421743}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -8442,6 +8837,74 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &883545137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 883545138}
+  - component: {fileID: 883545140}
+  - component: {fileID: 883545139}
+  m_Layer: 0
+  m_Name: Back_Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &883545138
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883545137}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 335707588}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &883545139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883545137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 563eb3323d6a25548aee58052f3672c6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &883545140
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883545137}
 --- !u!1001 &893643399
 Prefab:
   m_ObjectHideFlags: 0
@@ -10175,7 +10638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da66e230dade1ce419f50ba66892c483, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ficha: {fileID: 2051182571}
+  ficha: {fileID: 1169044209}
   classeSelecionada:
     classe: 0
     modificadorVida: 0
@@ -10730,7 +11193,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -10749,7 +11212,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 222954998}
-  toggleTransition: 1
+  toggleTransition: 0
   graphic: {fileID: 27375059}
   m_Group: {fileID: 104892256}
   onValueChanged:
@@ -11218,6 +11681,156 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1163859979}
+--- !u!1 &1169044207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1169044208}
+  - component: {fileID: 1169044209}
+  m_Layer: 0
+  m_Name: FichaManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1169044208
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1169044207}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 110097936}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1169044209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1169044207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e37c5dd20c01c4ba1b9b02754a775c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forInput: {fileID: 142112285}
+  atributoList:
+  - attInput: {fileID: 142112285}
+    modText: {fileID: 1020195769}
+  - attInput: {fileID: 152737259}
+    modText: {fileID: 1445640883}
+  - attInput: {fileID: 953222578}
+    modText: {fileID: 1626848820}
+  - attInput: {fileID: 1155432122}
+    modText: {fileID: 1639992670}
+  - attInput: {fileID: 956582768}
+    modText: {fileID: 2009649037}
+  - attInput: {fileID: 687361028}
+    modText: {fileID: 93798862}
+  vidaText: {fileID: 1829304859}
+  cargaText: {fileID: 1841979603}
+  alinhamentoDropdown: {fileID: 18584616}
+  alinhamentoText: {fileID: 1096323412}
+  racaDropdown: {fileID: 1813854666}
+  racaText: {fileID: 302816289}
+  vinculoInput: {fileID: 159693204}
+  equipamentoInicial: {fileID: 1446391577}
+  movimentoInicialElement: {fileID: 1358956458321510, guid: 5603055e0359ed448a7a35aa97e5873c,
+    type: 2}
+  movimentosIniciaisText: {fileID: 922548529}
+  fichaMovimentosIniciaisGrid: {fileID: 2089444083}
+  movimentosIniciaisGrid: {fileID: 1235754537}
+  movimentoAvancadoElement: {fileID: 1358956458321510, guid: 8263ac502285c3743a8c4e04bbcfa3d9,
+    type: 2}
+  movimentosAvancadosText: {fileID: 511412885}
+  fichaMovimentosAvancadosGrid: {fileID: 1601803531}
+  movimentosAvancadosGrid: {fileID: 304158697}
+  danoText: {fileID: 1691426774}
+  classeList:
+  - classe: 0
+    modificadorVida: 8
+    modificadorCarga: 8
+    dano: 10
+    alinhamentosList:
+    - alinhamentoEnum: 2
+      descricao: "Ensinar a algu\xE9m os modos de seu povo."
+    - alinhamentoEnum: 3
+      descricao: "Se afastar de uma conven\xE7\xE3o do mundo civilizado."
+    racasList:
+    - racaEnum: 0
+      descricao: "Voc\xEA pode ser um elfo, an\xE3o, halfling ou humano, mas seu povo
+        n\xE3o \xE9 dessas redondezas. No in\xEDcio de cada sess\xE3o, o MJ lhe perguntar\xE1
+        algo a respeito de sua terra natal, por que voc\xEA foi embora ou o que deixou
+        para tr\xE1s. Se responder, marque XP."
+    - racaEnum: 1
+      descricao: "Voc\xEA pode ser um elfo, an\xE3o, halfling ou humano, mas seu povo
+        n\xE3o \xE9 dessas redondezas. No in\xEDcio de cada sess\xE3o, o MJ lhe perguntar\xE1
+        algo a respeito de sua terra natal, por que voc\xEA foi embora ou o que deixou
+        para tr\xE1s. Se responder, marque XP."
+    - racaEnum: 2
+      descricao: "Voc\xEA pode ser um elfo, an\xE3o, halfling ou humano, mas seu povo
+        n\xE3o \xE9 dessas redondezas. No in\xEDcio de cada sess\xE3o, o MJ lhe perguntar\xE1
+        algo a respeito de sua terra natal, por que voc\xEA foi embora ou o que deixou
+        para tr\xE1s. Se responder, marque XP."
+    - racaEnum: 3
+      descricao: "Voc\xEA pode ser um elfo, an\xE3o, halfling ou humano, mas seu povo
+        n\xE3o \xE9 dessas redondezas. No in\xEDcio de cada sess\xE3o, o MJ lhe perguntar\xE1
+        algo a respeito de sua terra natal, por que voc\xEA foi embora ou o que deixou
+        para tr\xE1s. Se responder, marque XP."
+    vinculoTemplate: "Preencha pelo menos um dos espa\xE7os em branco com o nome de
+      algum companheiro:\r\n\u2022 ______________________ \xE9 fraco e tolo, mas me
+      diverte.\r\n\u2022 Os modos de ______________________ s\xE3o estranhos e confusos.\r\n\u2022
+      __________________ est\xE1 sempre entrando em apuros \u2013 eu preciso proteg\xEA-lo
+      de si mesmo.\r\n\u2022 _________________ compartilha minha fome por gl\xF3ria;
+      a terra tremer\xE1 diante de n\xF3s!"
+    equipamentoDeComeco: "Voc\xEA possui ra\xE7\xF5es de masmorra (5 usos, peso 1),
+      uma adaga (m\xE3o, peso 1), alguma lembran\xE7a de sua jornada ou de sua terra
+      natal, e uma arma \xE0 sua escolha:\r\n\no Machado (corpo a corpo, peso 1)\r\no
+      Espada de Duas M\xE3os (corpo a corpo, +1 de dano, peso 2)\n\nESCOLHA UM:\n\no
+      Equipamento de aventureiro (5 usos, peso 1) e ra\xE7\xF5es de masmorra (5 usos,
+      peso 1)\r\nou Cota de malha (armadura 1, peso 1)"
+    textMovimentosIniciais: "Escolha um dos dois movimentos abaixo no in\xEDcio do
+      jogo:\n- ARMADURA DE PLACAS E PORTANDO A\xC7O;\n- DESIMPEDIDO E ILESO."
+    movimentosIniciaisList:
+    - nome: "ARMADURA DE PLACAS E PORTANDO A\xC7O"
+      descricao: "Voc\xEA ignora o r\xF3tulo desengon\xE7ada das armaduras que vestir."
+    - nome: DESIMPEDIDO E ILESO
+      descricao: "Enquanto estiver abaixo de sua Carga, e n\xE3o estiver usando armadura
+        nem escudo, receba +1 de armadura."
+    - nome: "APETITE HERC\xDALEO"
+      descricao: "Outras pessoas podem se contentar apenas com o gosto do vinho, o
+        dom\xEDnio sobre um servo ou ambos, mas voc\xEA quer mais. Escolha dois apetites.
+        Enquanto estiver perseguindo um de seus apetites, se realizar algum movimento,
+        no lugar de rolar 2d6 voc\xEA rola 1d6+1d8. Se o d6 apresentar o maior resultado
+        do par, o MJ tamb\xE9m ir\xE1 introduzir uma complica\xE7\xE3o ou perigo que
+        surge a partir de sua busca implac\xE1vel.\r\n- Pura destrui\xE7\xE3o, Poder
+        sobre outras pessoas\r, Prazeres mortais\r, Conquista\r, Riquezas e propriedades\r\n-
+        Fama e gl\xF3ria"
+    - nome: "CONTROLE DA SITUA\xC7\xC3O"
+      descricao: "Voc\xEA recebe +1 constante para seu \xFAltimo suspiro. Quando realizar
+        o \xFAltimo suspiro, com voc\xEA pode fazer uma oferta para a Morte em troca
+        de sua vida. Se a Morte aceitar, voc\xEA viver\xE1 de novo. Caso contr\xE1rio,
+        voc\xEA morre."
+    - nome: MUSCULOSO
+      descricao: "Quando portar uma arma, ela recebe os r\xF3tulos poderoso e grotesco."
+    - nome: "O QUE VOC\xCA EST\xC1 ESPERANDO? (CON)"
+      descricao: "Quando gritar um desafio para seus inimigos, role+CON. Com 10+,
+        eles passam a lhe tratar como a amea\xE7a mais \xF3bvia a ser enfrentada,
+        ignorando os seus companheiros, e voc\xEA recebe +2 de dano constante contra
+        eles. Com 7-9, apenas alguns (os mais fracos ou tolos dentre eles) caem em
+        suas provoca\xE7\xF5es."
+    textMovimentosAvancados: "Esse \xE9 o texto que vem no movimento avan\xE7ado"
+    movimentosAvancadosList:
+    - nome: "ISSO \xC9 UM MOVIMENTO AVAN\xC7ADO"
+      descricao: "Eu sou a descri\xE7\xE3o do movimento avan\xE7ado."
 --- !u!1 &1182794277
 GameObject:
   m_ObjectHideFlags: 0
@@ -11674,7 +12287,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 563eb3323d6a25548aee58052f3672c6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12346,8 +12959,8 @@ RectTransform:
   m_Father: {fileID: 1941321676}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.03862031, y: 0.9676933}
-  m_AnchorMax: {x: 0.20742588, y: 0.98990023}
+  m_AnchorMin: {x: 0.05780278, y: 0.9727464}
+  m_AnchorMax: {x: 0.18824343, y: 0.98990023}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -14952,6 +15565,7 @@ RectTransform:
   - {fileID: 1432850943}
   - {fileID: 104892255}
   - {fileID: 2035515286}
+  - {fileID: 378207260}
   m_Father: {fileID: 367421743}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15872,7 +16486,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2051182571}
+      - m_Target: {fileID: 0}
         m_MethodName: AdicionarVinculoTemplate
         m_Mode: 1
         m_Arguments:
@@ -16477,7 +17091,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -16496,7 +17110,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 921272009}
-  toggleTransition: 1
+  toggleTransition: 0
   graphic: {fileID: 53351126}
   m_Group: {fileID: 104892256}
   onValueChanged:
@@ -16865,7 +17479,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -16884,7 +17498,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 989974138}
-  toggleTransition: 1
+  toggleTransition: 0
   graphic: {fileID: 755285266}
   m_Group: {fileID: 104892256}
   onValueChanged:
@@ -17821,7 +18435,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -17840,7 +18454,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1855235418}
-  toggleTransition: 1
+  toggleTransition: 0
   graphic: {fileID: 1671492224}
   m_Group: {fileID: 104892256}
   onValueChanged:
@@ -20158,7 +20772,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -20177,7 +20791,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1470955779}
-  toggleTransition: 1
+  toggleTransition: 0
   graphic: {fileID: 597236757}
   m_Group: {fileID: 104892256}
   onValueChanged:
@@ -20432,6 +21046,7 @@ RectTransform:
   - {fileID: 714273075}
   - {fileID: 1938198153}
   - {fileID: 1162443808}
+  - {fileID: 335707588}
   m_Father: {fileID: 234950261}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21413,7 +22028,7 @@ GameObject:
   - component: {fileID: 2035515288}
   - component: {fileID: 2035515287}
   m_Layer: 0
-  m_Name: "Avan\xE7ar_Button"
+  m_Name: EscolherClasse_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21476,7 +22091,40 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2035515288}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 434986280}
+        m_MethodName: ChooseCharacter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 685647629}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1840411168}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2035515288
@@ -21753,7 +22401,6 @@ GameObject:
   - component: {fileID: 2051182570}
   - component: {fileID: 2051182569}
   - component: {fileID: 2051182568}
-  - component: {fileID: 2051182571}
   m_Layer: 0
   m_Name: FichaManager_Canvas
   m_TagString: Untagged
@@ -21837,127 +22484,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &2051182571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2051182566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29e37c5dd20c01c4ba1b9b02754a775c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forInput: {fileID: 142112285}
-  atributoList:
-  - attInput: {fileID: 142112285}
-    modText: {fileID: 1020195769}
-  - attInput: {fileID: 152737259}
-    modText: {fileID: 1445640883}
-  - attInput: {fileID: 953222578}
-    modText: {fileID: 1626848820}
-  - attInput: {fileID: 1155432122}
-    modText: {fileID: 1639992670}
-  - attInput: {fileID: 956582768}
-    modText: {fileID: 2009649037}
-  - attInput: {fileID: 687361028}
-    modText: {fileID: 93798862}
-  vidaText: {fileID: 1829304859}
-  cargaText: {fileID: 1841979603}
-  alinhamentoDropdown: {fileID: 18584616}
-  alinhamentoText: {fileID: 1096323412}
-  racaDropdown: {fileID: 1813854666}
-  racaText: {fileID: 302816289}
-  vinculoInput: {fileID: 159693204}
-  equipamentoInicial: {fileID: 1446391577}
-  movimentoInicialElement: {fileID: 1358956458321510, guid: 5603055e0359ed448a7a35aa97e5873c,
-    type: 2}
-  movimentosIniciaisText: {fileID: 922548529}
-  fichaMovimentosIniciaisGrid: {fileID: 2089444083}
-  movimentosIniciaisGrid: {fileID: 1235754537}
-  movimentoAvancadoElement: {fileID: 1358956458321510, guid: 8263ac502285c3743a8c4e04bbcfa3d9,
-    type: 2}
-  movimentosAvancadosText: {fileID: 511412885}
-  fichaMovimentosAvancadosGrid: {fileID: 1601803531}
-  movimentosAvancadosGrid: {fileID: 304158697}
-  danoText: {fileID: 1691426774}
-  classeList:
-  - classe: 0
-    modificadorVida: 8
-    modificadorCarga: 8
-    dano: 10
-    alinhamentosList:
-    - alinhamentoEnum: 2
-      descricao: "Ensinar a algu\xE9m os modos de seu povo."
-    - alinhamentoEnum: 3
-      descricao: "Se afastar de uma conven\xE7\xE3o do mundo civilizado."
-    racasList:
-    - racaEnum: 0
-      descricao: "Voc\xEA pode ser um elfo, an\xE3o, halfling ou humano, mas seu povo
-        n\xE3o \xE9 dessas redondezas. No in\xEDcio de cada sess\xE3o, o MJ lhe perguntar\xE1
-        algo a respeito de sua terra natal, por que voc\xEA foi embora ou o que deixou
-        para tr\xE1s. Se responder, marque XP."
-    - racaEnum: 1
-      descricao: "Voc\xEA pode ser um elfo, an\xE3o, halfling ou humano, mas seu povo
-        n\xE3o \xE9 dessas redondezas. No in\xEDcio de cada sess\xE3o, o MJ lhe perguntar\xE1
-        algo a respeito de sua terra natal, por que voc\xEA foi embora ou o que deixou
-        para tr\xE1s. Se responder, marque XP."
-    - racaEnum: 2
-      descricao: "Voc\xEA pode ser um elfo, an\xE3o, halfling ou humano, mas seu povo
-        n\xE3o \xE9 dessas redondezas. No in\xEDcio de cada sess\xE3o, o MJ lhe perguntar\xE1
-        algo a respeito de sua terra natal, por que voc\xEA foi embora ou o que deixou
-        para tr\xE1s. Se responder, marque XP."
-    - racaEnum: 3
-      descricao: "Voc\xEA pode ser um elfo, an\xE3o, halfling ou humano, mas seu povo
-        n\xE3o \xE9 dessas redondezas. No in\xEDcio de cada sess\xE3o, o MJ lhe perguntar\xE1
-        algo a respeito de sua terra natal, por que voc\xEA foi embora ou o que deixou
-        para tr\xE1s. Se responder, marque XP."
-    vinculoTemplate: "Preencha pelo menos um dos espa\xE7os em branco com o nome de
-      algum companheiro:\r\n\u2022 ______________________ \xE9 fraco e tolo, mas me
-      diverte.\r\n\u2022 Os modos de ______________________ s\xE3o estranhos e confusos.\r\n\u2022
-      __________________ est\xE1 sempre entrando em apuros \u2013 eu preciso proteg\xEA-lo
-      de si mesmo.\r\n\u2022 _________________ compartilha minha fome por gl\xF3ria;
-      a terra tremer\xE1 diante de n\xF3s!"
-    equipamentoDeComeco: "Voc\xEA possui ra\xE7\xF5es de masmorra (5 usos, peso 1),
-      uma adaga (m\xE3o, peso 1), alguma lembran\xE7a de sua jornada ou de sua terra
-      natal, e uma arma \xE0 sua escolha:\r\n\no Machado (corpo a corpo, peso 1)\r\no
-      Espada de Duas M\xE3os (corpo a corpo, +1 de dano, peso 2)\n\nESCOLHA UM:\n\no
-      Equipamento de aventureiro (5 usos, peso 1) e ra\xE7\xF5es de masmorra (5 usos,
-      peso 1)\r\nou Cota de malha (armadura 1, peso 1)"
-    textMovimentosIniciais: "Escolha um dos dois movimentos abaixo no in\xEDcio do
-      jogo:\n- ARMADURA DE PLACAS E PORTANDO A\xC7O;\n- DESIMPEDIDO E ILESO."
-    movimentosIniciaisList:
-    - nome: "ARMADURA DE PLACAS E PORTANDO A\xC7O"
-      descricao: "Voc\xEA ignora o r\xF3tulo desengon\xE7ada das armaduras que vestir."
-    - nome: DESIMPEDIDO E ILESO
-      descricao: "Enquanto estiver abaixo de sua Carga, e n\xE3o estiver usando armadura
-        nem escudo, receba +1 de armadura."
-    - nome: "APETITE HERC\xDALEO"
-      descricao: "Outras pessoas podem se contentar apenas com o gosto do vinho, o
-        dom\xEDnio sobre um servo ou ambos, mas voc\xEA quer mais. Escolha dois apetites.
-        Enquanto estiver perseguindo um de seus apetites, se realizar algum movimento,
-        no lugar de rolar 2d6 voc\xEA rola 1d6+1d8. Se o d6 apresentar o maior resultado
-        do par, o MJ tamb\xE9m ir\xE1 introduzir uma complica\xE7\xE3o ou perigo que
-        surge a partir de sua busca implac\xE1vel.\r\n- Pura destrui\xE7\xE3o, Poder
-        sobre outras pessoas\r, Prazeres mortais\r, Conquista\r, Riquezas e propriedades\r\n-
-        Fama e gl\xF3ria"
-    - nome: "CONTROLE DA SITUA\xC7\xC3O"
-      descricao: "Voc\xEA recebe +1 constante para seu \xFAltimo suspiro. Quando realizar
-        o \xFAltimo suspiro, com voc\xEA pode fazer uma oferta para a Morte em troca
-        de sua vida. Se a Morte aceitar, voc\xEA viver\xE1 de novo. Caso contr\xE1rio,
-        voc\xEA morre."
-    - nome: MUSCULOSO
-      descricao: "Quando portar uma arma, ela recebe os r\xF3tulos poderoso e grotesco."
-    - nome: "O QUE VOC\xCA EST\xC1 ESPERANDO? (CON)"
-      descricao: "Quando gritar um desafio para seus inimigos, role+CON. Com 10+,
-        eles passam a lhe tratar como a amea\xE7a mais \xF3bvia a ser enfrentada,
-        ignorando os seus companheiros, e voc\xEA recebe +2 de dano constante contra
-        eles. Com 7-9, apenas alguns (os mais fracos ou tolos dentre eles) caem em
-        suas provoca\xE7\xF5es."
-    textMovimentosAvancados: "Esse \xE9 o texto que vem no movimento avan\xE7ado"
-    movimentosAvancadosList:
-    - nome: "ISSO \xC9 UM MOVIMENTO AVAN\xC7ADO"
-      descricao: "Eu sou a descri\xE7\xE3o do movimento avan\xE7ado."
 --- !u!1 &2080929231
 GameObject:
   m_ObjectHideFlags: 0
@@ -22614,7 +23140,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -22633,7 +23159,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 411929002}
-  toggleTransition: 1
+  toggleTransition: 0
   graphic: {fileID: 1038184008}
   m_Group: {fileID: 104892256}
   onValueChanged:

@@ -75,14 +75,7 @@ public class Ficha : MonoBehaviour
         alinhamentoDropdown.onValueChanged.AddListener(delegate { SelecionarAlinhamento(); });
         racaDropdown.onValueChanged.AddListener(delegate { SelecionarRaca(); });
 
-        CarregarDicionarios();
-        CarregarDano();
-
-        CarregarTextoMovimentosIniciais();
-        CarregarMovimentosIniciais();
-
-        CarregarTextoMovimentosAvancados();
-        CarregarMovimentosAvancados();
+        CarregarFicha();
     }
 
     private void OnDisable()
@@ -96,6 +89,12 @@ public class Ficha : MonoBehaviour
 
     private void Start()
     {
+        CarregarFicha();
+    }
+
+    public void CarregarFicha()
+    {
+
         CarregarDicionarios();
         CarregarDano();
 

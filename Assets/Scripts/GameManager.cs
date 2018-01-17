@@ -20,12 +20,7 @@ public class GameManager : MonoBehaviour {
             Destroy(gameObject);
             return;
         }
+
+        //classeSelecionada = Ficha.instance.classeList[0];
     }
-
-    private void Start()
-    {
-        GameManager.instance.classeSelecionada = ficha.classeList[0];
-    }
-
-
 }
