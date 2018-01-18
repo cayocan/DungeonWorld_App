@@ -25,6 +25,7 @@ public class CreateCharacterManager : MonoBehaviour {
             }
         }
 
+        SaveManager.instance.CreateSaveSlot();
         Ficha.instance.CarregarFicha();
     }
 }

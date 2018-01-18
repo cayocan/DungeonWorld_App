@@ -85,6 +85,13 @@ public class Ficha : MonoBehaviour
         {
             att.attInput.onEndEdit.RemoveAllListeners();
         }
+
+        SaveManager.instance.SaveCharSheet();
+    }
+
+    private void OnApplicationQuit()
+    {
+        SaveManager.instance.SaveCharSheet();
     }
 
     private void Start()
@@ -282,7 +289,6 @@ public class Ficha : MonoBehaviour
 
         foreach (var item in GameManager.instance.classeSelecionada.movimentosAvancadosList)
         {
-            Debug.Log("Instanciou!");
             obj = Instantiate(movimentoAvancadoElement, movimentosAvancadosGrid.transform);
             helper = obj.GetComponent<MovimentosHelper>();
 

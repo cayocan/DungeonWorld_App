@@ -220,7 +220,7 @@ public class Equipamento : MonoBehaviour
 
     public void AddCustomEquip()
     {
-        GameObject obj = Instantiate(customEquip, Equipamento.instance.equipFichaGrid.gameObject.transform);
+        Instantiate(customEquip, Equipamento.instance.equipFichaGrid.gameObject.transform);
     }
 
 }

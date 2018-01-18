@@ -39,8 +39,9 @@ GameObject:
   - component: {fileID: 222133944290933642}
   - component: {fileID: 114080768336247088}
   - component: {fileID: 114775228131509912}
+  - component: {fileID: 114136048414958444}
   m_Layer: 0
-  m_Name: SavedChars_Button
+  m_Name: SavedSlot_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,6 +107,23 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Char_Name -|- Char_Race -|- Char_Class
+--- !u!114 &114136048414958444
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1251336127562338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e66eeb47a2312ef4384a863b3eb98bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slotText: {fileID: 114112634127549708}
+  slotButton: {fileID: 114775228131509912}
+  slotId: 0
+  slotCharName: 
+  slotCharRace: 
+  slotCharClass: 
 --- !u!114 &114775228131509912
 MonoBehaviour:
   m_ObjectHideFlags: 1
