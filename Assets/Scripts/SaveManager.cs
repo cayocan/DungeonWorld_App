@@ -18,11 +18,11 @@ public class SaveManager : MonoBehaviour {
     public Classe.Classes classe;//enum
 
     [Space(20)]
-    public Text nome;//string
-    public Text FOR, DES, CON, INT, SAB, CAR;//int
-    public Text armadura, cargaAtual, moedas, nivel, xp;//int
+    public InputField nome;//string
+    public InputField FOR, DES, CON, INT, SAB, CAR;//int
+    public InputField armadura, cargaAtual, moedas, nivel, xp;//int
     public Dropdown alinhamento, raca;//int value
-    public Text vinculos;//string
+    public InputField vinculos;//string
     public GameObject equipamentosGrid, movimentosIniciaisGrid, movimentosAvancadosGrid;
     #endregion
 
@@ -65,12 +65,13 @@ public class SaveManager : MonoBehaviour {
         {
             List<int> saveSlots = ES2.LoadList<int>("saveSlotsId");
 
-            foreach (var item in saveSlots)
+            foreach (int item in saveSlots)
             {
                 SaveSlot slot = Instantiate(saveSlotPrefab, saveSlotGrid.transform).GetComponent<SaveSlot>();
 
+                slot.slotId = item;
                 slot.slotCharName = ES2.Load<string>("nome" + slot.slotId);
-                slot.slotCharRace = raca.options[ES2.Load<int>("raca" + slot.slotId)].ToString();
+                //slot.slotCharRace = raca.options[ES2.Load<int>("raca" + slot.slotId)].ToString();
                 slot.slotCharClass = ES2.Load<Classe.Classes>("classe" + slot.slotId).ToString();
             }
         }
@@ -107,7 +108,7 @@ public class SaveManager : MonoBehaviour {
 
         foreach (Transform item in movimentosIniciaisGrid.transform)
         {
-            MovimentosIniciaisHelper movInicHelper = item.GetComponent<MovimentosIniciaisHelper>();
+            MovimentosHelper movInicHelper = item.GetComponent<MovimentosHelper>();
 
             movInicDic.Add(movInicHelper.nameText.text, movInicHelper.descriptionText.text);
         }
@@ -116,7 +117,7 @@ public class SaveManager : MonoBehaviour {
 
         foreach (Transform item in movimentosAvancadosGrid.transform)
         {
-            MovimentosAvancadosHelper movAvanHelper = item.GetComponent<MovimentosAvancadosHelper>();
+            MovimentosHelper movAvanHelper = item.GetComponent<MovimentosHelper>();
 
             movAvanDic.Add(movAvanHelper.nameText.text, movAvanHelper.descriptionText.text);
         }
@@ -128,6 +129,8 @@ public class SaveManager : MonoBehaviour {
 
     public void LoadCharSheet(SaveSlot slot)
     {
+        currentSlotId = slot.slotId;
+
         Classe.Classes classe = ES2.Load<Classe.Classes>("classe" + slot.slotId);
 
         foreach (var item in Ficha.instance.classeList)
@@ -138,7 +141,11 @@ public class SaveManager : MonoBehaviour {
             }
         }
 
-        nome.text = ES2.Load<string>("nome" + slot.slotId);
+        Ficha.instance.CarregarFicha();
+
+        string x = ES2.Load<string>("nome" + slot.slotId);
+        nome.text = x;
+
         FOR.text = ES2.Load<string>("FOR" + slot.slotId);
         DES.text = ES2.Load<string>("DES" + slot.slotId);
         CON.text = ES2.Load<string>("CON" + slot.slotId);
@@ -153,7 +160,7 @@ public class SaveManager : MonoBehaviour {
         alinhamento.value = ES2.Load<int>("alinhamento" + slot.slotId);
         raca.value = ES2.Load<int>("raca" + slot.slotId);
 
-        foreach (var item in ES2.Load<Dictionary<string, string>>("equipamentos" + slot.slotId))
+        foreach (var item in ES2.LoadDictionary<string, string>("equipamentos" + slot.slotId))
         {
             EquipmentHelper equipHelper = Instantiate(equipamentoElement, equipamentosGrid.transform).GetComponent<EquipmentHelper>();
 
@@ -161,7 +168,7 @@ public class SaveManager : MonoBehaviour {
             equipHelper.descriptionText.text = item.Value;
         }
 
-        foreach (var item in ES2.Load<Dictionary<string, string>>("movimentosIniciais" + slot.slotId))
+        foreach (var item in ES2.LoadDictionary<string, string>("movimentosIniciais" + slot.slotId))
         {
             MovimentosIniciaisHelper movInicHelper = Instantiate(movimentosIniciaisElement, movimentosIniciaisGrid.transform).GetComponent<MovimentosIniciaisHelper>();
 
@@ -169,7 +176,7 @@ public class SaveManager : MonoBehaviour {
             movInicHelper.descriptionText.text = item.Value;
         }
 
-        foreach (var item in ES2.Load<Dictionary<string, string>>("movimentosAvancados" + slot.slotId))
+        foreach (var item in ES2.LoadDictionary<string, string>("movimentosAvancados" + slot.slotId))
         {
             MovimentosAvancadosHelper movAvancHelper = Instantiate(movimentosAvancadosElement, movimentosAvancadosGrid.transform).GetComponent<MovimentosAvancadosHelper>();
 
@@ -189,11 +196,12 @@ public class SaveManager : MonoBehaviour {
         }
 
         saveSlotsId.Add(randomId);
-
+        /*
         GameObject slotPrefab =  Instantiate(saveSlotPrefab, saveSlotGrid.transform);
         SaveSlot saveSlot = slotPrefab.GetComponent<SaveSlot>();
 
         saveSlot.slotId = randomId;
+        */
         currentSlotId = randomId;
 
         ES2.Save(saveSlotsId, "saveSlotsId");

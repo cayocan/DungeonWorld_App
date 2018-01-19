@@ -10,7 +10,7 @@ public class SaveSlot : MonoBehaviour {
 
     public int slotId;
     public string slotCharName = "";
-    public string slotCharRace = "";
+    //public string slotCharRace = "";
     public string slotCharClass = "";
 
 
@@ -34,17 +34,18 @@ public class SaveSlot : MonoBehaviour {
             slotCharName = ES2.Load<string>("slotCharName" + slotId);
         }
 
+        /*
         if (ES2.Exists(slotId + "slotCharRace"))
         {
             slotCharRace = ES2.Load<string>("slotCharRace" + slotId);
-        }
+        }*/
 
         if (ES2.Exists(slotId + "slotCharClass"))
         {
             slotCharClass = ES2.Load<string>("slotCharClass" + slotId);
         }
         
-        slotText.text = slotCharName + " | " + slotCharRace + " | " + slotCharClass;
+        slotText.text = slotCharName + " | " + slotCharClass;
     }
 
     public void ChangeTabs()

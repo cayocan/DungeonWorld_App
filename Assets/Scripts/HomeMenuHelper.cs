@@ -9,8 +9,9 @@ public class HomeMenuHelper : MonoBehaviour {
         SaveManager.instance.LoadSaveSlots();
     }
 
+    /*
     private void OnEnable()
     {
         SaveManager.instance.LoadSaveSlots();
-    }
+    }*/
 }

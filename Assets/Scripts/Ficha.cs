@@ -85,13 +85,6 @@ public class Ficha : MonoBehaviour
         {
             att.attInput.onEndEdit.RemoveAllListeners();
         }
-
-        SaveManager.instance.SaveCharSheet();
-    }
-
-    private void OnApplicationQuit()
-    {
-        SaveManager.instance.SaveCharSheet();
     }
 
     private void Start()
