@@ -64,6 +64,7 @@ public class SaveManager : MonoBehaviour {
         if (ES2.Exists("saveSlotsId"))
         {
             List<int> saveSlots = ES2.LoadList<int>("saveSlotsId");
+            Debug.Log(saveSlots);
 
             foreach (int item in saveSlots)
             {
@@ -196,12 +197,6 @@ public class SaveManager : MonoBehaviour {
         }
 
         saveSlotsId.Add(randomId);
-        /*
-        GameObject slotPrefab =  Instantiate(saveSlotPrefab, saveSlotGrid.transform);
-        SaveSlot saveSlot = slotPrefab.GetComponent<SaveSlot>();
-
-        saveSlot.slotId = randomId;
-        */
         currentSlotId = randomId;
 
         ES2.Save(saveSlotsId, "saveSlotsId");

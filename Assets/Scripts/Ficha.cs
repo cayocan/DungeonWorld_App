@@ -43,10 +43,16 @@ public class Ficha : MonoBehaviour
     [Space(15)]
 
     public Text danoText;
-    [Space(15)]
-    
-    public List<Classe> classeList;
+    [Space(30)]
 
+    public InputField nome;
+    public InputField FOR, DES, CON, INT, SAB, CAR,
+        armadura, cargaAtual, moedas, nivel, xp, vinculos;
+    public Dropdown alinhamento, raca;
+    public GameObject equipamentosGrid;
+    [Space(15)]
+
+    public List<Classe> classeList;
 
     private void Awake()
     {
@@ -94,7 +100,6 @@ public class Ficha : MonoBehaviour
 
     public void CarregarFicha()
     {
-
         CarregarDicionarios();
         CarregarDano();
 
@@ -287,6 +292,41 @@ public class Ficha : MonoBehaviour
 
             helper.nameText.text = item.nome;
             helper.descriptionText.text = item.descricao;
+        }
+    }
+
+    public void CarregarValoresDefault()
+    {
+        nome.text = "";
+        FOR.text = "";
+        DES.text = "";
+        CON.text = "";
+        INT.text = "";
+        SAB.text = "";
+        CAR.text = "";
+        armadura.text = "";
+        cargaAtual.text = "";
+        moedas.text = "";
+        nivel.text = "";
+        xp.text = "";
+        vinculos.text = "";
+
+        alinhamento.value = 0;
+        raca.value = 0;
+
+        foreach (Transform item in equipamentosGrid.transform)
+        {
+            Destroy(item.gameObject);
+        }
+
+        foreach (Transform item in fichaMovimentosIniciaisGrid.transform)
+        {
+            Destroy(item.gameObject);
+        }
+
+        foreach (Transform item in movimentosAvancadosGrid.transform)
+        {
+            Destroy(item.gameObject);
         }
     }
 }

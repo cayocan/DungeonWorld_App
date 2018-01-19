@@ -11455,6 +11455,22 @@ MonoBehaviour:
   fichaMovimentosAvancadosGrid: {fileID: 1601803531}
   movimentosAvancadosGrid: {fileID: 304158697}
   danoText: {fileID: 1691426774}
+  nome: {fileID: 1479536396}
+  FOR: {fileID: 142112285}
+  DES: {fileID: 152737259}
+  CON: {fileID: 953222578}
+  INT: {fileID: 1155432122}
+  SAB: {fileID: 956582768}
+  CAR: {fileID: 687361028}
+  armadura: {fileID: 833463655}
+  cargaAtual: {fileID: 990462983}
+  moedas: {fileID: 526771383}
+  nivel: {fileID: 514863988}
+  xp: {fileID: 442147354}
+  vinculos: {fileID: 159693204}
+  alinhamento: {fileID: 18584616}
+  raca: {fileID: 1813854666}
+  equipamentosGrid: {fileID: 2043823581}
   classeList:
   - classe: 0
     modificadorVida: 8
@@ -21261,6 +21277,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1840411168}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1169044209}
+        m_MethodName: CarregarValoresDefault
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

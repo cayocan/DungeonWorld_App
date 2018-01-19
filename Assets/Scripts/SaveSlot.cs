@@ -20,6 +20,7 @@ public class SaveSlot : MonoBehaviour {
 
         slotButton.onClick.AddListener(ChangeTabs);
         slotButton.onClick.AddListener(() => SaveManager.instance.LoadCharSheet(this.GetComponent<SaveSlot>()));
+        slotButton.onClick.AddListener(Ficha.instance.CalcularAtributos);
     }
 
     private void OnEnable()
