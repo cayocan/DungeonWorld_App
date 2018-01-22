@@ -11544,10 +11544,409 @@ MonoBehaviour:
         ignorando os seus companheiros, e voc\xEA recebe +2 de dano constante contra
         eles. Com 7-9, apenas alguns (os mais fracos ou tolos dentre eles) caem em
         suas provoca\xE7\xF5es."
-    textMovimentosAvancados: "Esse \xE9 o texto que vem no movimento avan\xE7ado"
+    textMovimentosAvancados: "Quando ganhar um n\xEDvel entre 2 e 5, escolha um dos
+      seguintes movimentos: \nCONTINUO FAMINTO, APETITE POR DESTRUI\xC7\xC3O, MEU
+      AMOR POR VOC\xCA \xC9 COMO UM CAMINH\xC3O, AS MELHORES COISAS DA VIDA, GRANDE
+      VIAJANTE, USURPADOR, KHAN DOS KHANS, SANS\xC3O, ESMAGAR!, FOME INDESTRUT\xCDVEL,
+      PERCEP\xC7\xC3O DE PONTOS FRACOS, SEMPRE EM FRENTE.\n\nQuando ganhar um n\xEDvel
+      entre 6 e 10, escolha um dos seguintes movimentos ou um dos movimentos de n\xEDveis
+      2 e 5:\nUM \xD3TIMO DIA PARA MORRER, MATE A TODOS, GRITO DE GUERRA (CAR),, MARCA
+      DE PODER, MAIS! SEMPRE MAIS!, AQUELE QUE BATE A PORTA, DESCONFIAN\xC7A SAUD\xC1VEL,
+      PELO DEUS DO SANGUE (SAB).\n"
     movimentosAvancadosList:
-    - nome: "ISSO \xC9 UM MOVIMENTO AVAN\xC7ADO"
-      descricao: "Eu sou a descri\xE7\xE3o do movimento avan\xE7ado."
+    - nome: CONTINUO FAMINTO
+      descricao: Escolha um apetite adicional.
+    - nome: "APETITE POR DESTRUI\xC7\xC3O"
+      descricao: "Pegue um movimento da lista do guerreiro, bardo ou ladr\xE3o. Voc\xEA
+        n\xE3o pode pegar\r\nos movimentos de multiclasse dessas classes."
+    - nome: "MEU AMOR POR VOC\xCA \xC9 COMO UM CAMINH\xC3O"
+      descricao: "Quando realizar um feito de for\xE7a, nomeie algu\xE9m presente
+        que tenha ficado\r\nimpressionado por ele, e receba +1 adiante para negociar
+        com essa pessoa."
+    - nome: AS MELHORES COISAS DA VIDA
+      descricao: "No final da sess\xE3o, se tiver esmagado seus inimigos, v\xEA-los
+        fugir diante de sua\r\npresen\xE7a e ouvir os lamentos de suas vi\xFAvas,
+        marque XP."
+    - nome: GRANDE VIAJANTE
+      descricao: "Voc\xEA j\xE1 empreendeu jornadas por todos os lugares do mundo.
+        Quando chegar\r\nem algum lugar, pergunte ao MJ a respeito de tradi\xE7\xF5es
+        importantes, rituais e\r\nsimilares, e ele lhe dir\xE1 o que precisa saber."
+    - nome: USURPADOR
+      descricao: "Quando se provar superior a uma pessoa no poder, receba +1 adiante
+        contra seus\r\nseguidores, lacaios e puxa-sacos."
+    - nome: KHAN DOS KHANS
+      descricao: "Seus lacaios sempre aceitam a satisfa\xE7\xE3o gratuita de um apetite
+        seu como\r\npagamento."
+    - nome: "SANS\xC3O"
+      descricao: "Voc\xEA pode aceitar uma debilidade para imediatamente se livrar
+        de qualquer\r\nrestri\xE7\xE3o f\xEDsica ou mental."
+    - nome: ESMAGAR!
+      descricao: "Quando matar e pilhar, com 12+ cause seu dano e escolha algum objeto
+        f\xEDsico\r\nque seu alvo possua (uma arma, sua posi\xE7\xE3o, um membro):
+        ele perde o objeto\r\nescolhido."
+    - nome: "FOME INDESTRUT\xCDVEL"
+      descricao: "Quando for receber dano, voc\xEA pode optar por receber -1 constante
+        at\xE9 saciar um\r\nde seus apetites no lugar do dano. Voc\xEA n\xE3o poder\xE1
+        escolher esta op\xE7\xE3o enquanto\r\nestiver com essa penalidade ativa."
+    - nome: "PERCEP\xC7\xC3O DE PONTOS FRACOS"
+      descricao: "Quando discernir realidades, acrescente \u201Co que aqui \xE9 fraco
+        ou vulner\xE1vel?\u201D \xE0 lista\r\nde perguntas que voc\xEA pode fazer."
+    - nome: SEMPRE EM FRENTE
+      descricao: "Quando desafiar o perigo causado por algum movimento (como cair
+        de uma\r\r\nponte estreita ou passar correndo por um guarda armado), receba
+        +1."
+    - nome: "UM \xD3TIMO DIA PARA MORRER"
+      descricao: "Enquanto tiver menos PV do que sua CON (ou 1, o que for maior),
+        receba +1\r\nconstante."
+    - nome: MATE A TODOS
+      descricao: "Requer: Apetite Por Destrui\xE7\xE3o\r\nPegue mais um movimento
+        da lista do guerreiro, bardo ou ladr\xE3o. Voc\xEA n\xE3o pode\r\npegar os
+        movimentos de multiclasse dessas classes."
+    - nome: GRITO DE GUERRA (CAR)
+      descricao: "Quando entrar na batalha fazendo uma demonstra\xE7\xE3o de for\xE7a
+        (um urro, um\r\ngrito encorajador, uma dan\xE7a de batalha), role+CAR. Com
+        10+, ambos. Com\r\n7-9, escolha um ou outro.\r\n\u2022 Seus aliados s\xE3o
+        encorajados e recebem +1 adiante;\r\n\u2022 Seus inimigos sentir\xE3o medo
+        e agir\xE3o de acordo (evitando-o, escondendo-se,\r\natacando com abandono
+        direcionado pelo medo)."
+    - nome: MARCA DE PODER
+      descricao: "Quando adquirir este movimento e gastar algum tempo ininterrupto
+        refletindo\r\na respeito de suas gl\xF3rias passadas, voc\xEA poder\xE1 se
+        marcar com um s\xEDmbolo\r\nde seu poder (uma longa tran\xE7a amarrada com
+        sinos, tatuagens ou cicatrizes\r\nrituais, etc.). Qualquer criatura mortal
+        inteligente que enxergue o s\xEDmbolo saber\xE1\r\ninstintivamente que voc\xEA
+        \xE9 uma for\xE7a a ser reconhecida, e o tratar\xE1 de acordo."
+    - nome: MAIS! SEMPRE MAIS!
+      descricao: "Quando satisfizer um de seus apetites de forma extrema (destruindo
+        algo \xFAnico\r\ne significante, ganhando uma fama, riqueza ou poder enormes,
+        etc.) voc\xEA pode\r\noptar por resolv\xEA-lo permanentemente. Risque-o de
+        sua lista e marque XP. Apesar\r\nde poder buscar aquele apetite novamente,
+        voc\xEA n\xE3o sente mais o desejo ardente\r\nque uma vez sentiu. Em seu lugar,
+        escolha um novo apetite da lista ou escreva\r\nseu pr\xF3prio."
+    - nome: "AQUELE QUE BATE \xC0 PORTA"
+      descricao: "Quando desafiar o perigo, com 12+ voc\xEA vira o perigo de volta
+        contra ele mesmo.\r\nO MJ lhe descrever\xE1 como."
+    - nome: "DESCONFIAN\xC7A SAUD\xC1VEL"
+      descricao: "Sempre que a magia impura manipulada por homens mortais o obrigar
+        a desafiar\r\no perigo, trate qualquer resultado de 6- como se fosse 7-9."
+    - nome: PELO DEUS DO SANGUE (SAB)
+      descricao: "Voc\xEA foi iniciado nos velhos caminhos, os caminhos do sacrif\xEDcio.
+        Escolha alguma\r\ncoisa que seus deuses (ou esp\xEDritos ancestrais, totem,
+        etc.) valorizem - ouro,\r\nsangue, ossos ou coisa do g\xEAnero. Quando sacrificar
+        essas coisas em seus ritos e\r\nrituais, role+SAB. Com 10+, o MJ lhe conceder\xE1
+        algum conhecimento a respeito\r\ndos seus problemas atuais, ou uma b\xEAn\xE7\xE3o
+        que ir\xE1 ajud\xE1-lo. Com 7-9, o sacrif\xEDcio\r\nn\xE3o foi suficiente,
+        e seus deuses exigem tamb\xE9m que voc\xEA ofere\xE7a sua carne, mas\r\nainda
+        lhe concedem o conhecimento ou a b\xEAn\xE7\xE3o. Com 6-, voc\xEA consegue
+        apenas\r\na ira dos esp\xEDritos vol\xFAveis."
+  - classe: 1
+    modificadorVida: 6
+    modificadorCarga: 9
+    dano: 6
+    alinhamentosList:
+    - alinhamentoEnum: 0
+      descricao: Executar sua arte para ajudar ...
+    - alinhamentoEnum: 2
+      descricao: "Evitar um conflito ou desfa\xE7a ..."
+    - alinhamentoEnum: 3
+      descricao: "Estimular outros a realizarem uma a\xE7\xE3o decisiva que seja significativa
+        e mal planejada."
+    racasList:
+    - racaEnum: 1
+      descricao: "Quando entrar em um local importante (decis\xE3o do\r\njogador),
+        voc\xEA pode pedir ao MJ que lhe conte um fato\r\nqualquer a respeito da hist\xF3ria
+        daquele lugar.\r"
+    - racaEnum: 0
+      descricao: "Quando entrar pela primeira vez em um local civilizado,\r\nalgu\xE9m
+        que respeita os costumes de hospitalidade aos\r\nmenestr\xE9is ir\xE1 receb\xEA-lo
+        como seu convidado.\r"
+    vinculoTemplate: "\u2022 Esta n\xE3o \xE9 minha primeira aventura com ____________.\r\n\u2022
+      J\xE1 cantei hist\xF3rias sobre ________________ bem antes\r\nde nos conhecermos
+      pessoalmente.\r\n\u2022 ________________ \xE9 normalmente o alvo de minhas\r\npiadas.\r\n\u2022
+      Estou escrevendo uma balada a respeito das aventuras\r\nde ________________.\r\n\u2022
+      ________________ me confidenciou um segredo.\r\n\u2022 ________________ n\xE3o
+      confia em mim, e com boas\r\nraz\xF5es.\r"
+    equipamentoDeComeco: "Voc\xEA possui ra\xE7\xF5es de masmorra\r\n(mmmmm, peso
+      1).\r\nEscolha um instrumento, todos eles possuem peso 0 para voc\xEA:\r\no
+      O bandolim restaurado de seu pai;\r\no Uma bela flauta, presente de um nobre;\r\no
+      A gaita com a qual cortejou seu primeiro amor;\r\no Uma corneta roubada;\r\no
+      Uma rabeca que nunca foi tocada;\r\no Um livro de can\xE7\xF5es, escrito em
+      uma l\xEDngua esquecida.\r\n\nEscolha sua roupa:\r\no Armadura de couro (armadura
+      1, peso 1);\r\no Roupas ostensivas (peso 0).\n\nEscolha seu armamento:\r\no
+      Florete de duelo (corpo a corpo, preciso, peso 2);\r\no Arco desgastado (pr\xF3ximo,
+      peso 2),\r\nFardo de flechas (muni\xE7\xE3o mmm, peso 1)\r\ne Espada curta (corpo
+      a corpo, Peso 1).\r\n\nEscolha um:\r\no Equipamento de aventureiro (mmmmm, peso
+      1);\r\no Bandagens (peso 0);\r\no Cachimbo Halfling (peso 0);\r\no 3 moedas."
+    textMovimentosIniciais: "Voc\xEA possui os seguintes movimentos iniciais:"
+    movimentosIniciaisList:
+    - nome: ARTE ARCANA
+      descricao: "Quando tecer um feiti\xE7o b\xE1sico a partir de uma performance,
+        escolha um\r\naliado e um efeito:\r\n\u2022 Curar 1d8 PV;\r\n\u2022 +1d4 adiante
+        para o dano;\r\n\u2022 Remover um encantamento que esteja afetando sua mente;\r\n\u2022
+        Na pr\xF3xima vez que algu\xE9m Ajudar o alvo, ele receber\xE1 +2, e n\xE3o
+        +1;\r\nE depois role+CAR. Com 10+, o aliado recebe o efeito selecionado. Com\r\n7-9,
+        sua magia funciona, mas voc\xEA atrai aten\xE7\xE3o indesej\xE1vel, ou a sua
+        magia\r\nreverbera para outros alvos \xE0 escolha do MJ, afetando-os tamb\xE9m.\r"
+    - nome: CONHECIMENTO DE BARDO
+      descricao: "Escolha uma \xE1rea de especializa\xE7\xE3o:\r\no Magias e Feiti\xE7os;\r\no
+        Os Mortos e os Mortos-Vivos;\r\no Grandes Hist\xF3rias do Mundo Conhecido;\r\no
+        Um Besti\xE1rio de Criaturas Incomuns;\r\no As Esferas Planares;\r\no Lendas
+        de Her\xF3is do Passado;\r\no Os Deuses e seus Servos;\r\nQuando encontrar
+        pela primeira vez uma criatura, local ou item importante\r\n(decis\xE3o do
+        jogador) que esteja ligado ao seu conhecimento de bardo, voc\xEA\r\npode fazer
+        uma pergunta qualquer ao MJ a respeito daquilo, que ele deve\r\nresponder
+        honestamente. O MJ pode lhe perguntar qual foi a lenda, can\xE7\xE3o\r\nou
+        f\xE1bula na qual voc\xEA ouviu tal informa\xE7\xE3o.\r\n"
+    - nome: CHARMOSO(A) E RECEPTIVO(A)
+      descricao: "Quando conversar francamente com algu\xE9m, voc\xEA pode fazer ao
+        seu jogador\r\numa pergunta da lista abaixo, que deve ser respondida com honestidade.\r\nAquele
+        jogador ent\xE3o poder\xE1 tamb\xE9m lhe fazer uma pergunta da lista abaixo\r\n(que
+        voc\xEA tamb\xE9m precisa responder honestamente):\r\n\u2022 A quem voc\xEA
+        serve?\r\n\u2022 O que voc\xEA quer que eu fa\xE7a?\r\n\u2022 Como fa\xE7o
+        para conseguir que voc\xEA ________________?\r\n\u2022 O que voc\xEA realmente
+        est\xE1 sentindo agora?\r\n\u2022 O que voc\xEA mais deseja?\r\nn UM PORTO
+        NA TEMPESTADE\r\nQuando retornar a um local civilizado que j\xE1 tenha visitado
+        previamente,\r\ndiga ao MJ quando esteve aqui pela \xFAltima vez. Ele lhe
+        responder\xE1 quais\r\nforam as mudan\xE7as ocorridas desde aquela \xE9poca.\r"
+    - nome: UM PORTO NA TEMPESTADE
+      descricao: "Quando retornar a um local civilizado que j\xE1 tenha visitado previamente,\r\ndiga
+        ao MJ quando esteve aqui pela \xFAltima vez. Ele lhe responder\xE1 quais\r\nforam
+        as mudan\xE7as ocorridas desde aquela \xE9poca.\r"
+    textMovimentosAvancados: "Quando ganhar um n\xEDvel entre 2 e 5, escolha um dos
+      seguintes movimentos:\nCAN\xC7\xC3O DA CURA, CACOFONIA VIOLENTA. VOLUME M\xC1XIMO
+      (CAR), GRITO MET\xC1LICO (CON), UMA PEQUENA AJUDA DE MEUS AMIGOS, TONS SOBRENATURAIS,
+      ROSTO INESQUEC\xCDVEL, APARO DO DUELISTA, MISTIFICAR, AMADOR EM MULTICLASSE,
+      INICIADO EM MULTICLASSE.\n\nQuando ganhar um n\xEDvel entre 6 e 10, escolha
+      um dos seguintes movimentos ou um dos\r\nmovimentos de n\xEDveis 2-5:\nREFR\xC3O
+      DA CURA, EXPLOS\xC3O SONORA VIOLENTA, REPUTA\xC7\xC3O, ACORDE SOBRENATURAL,
+      OUVIDO BOM PARA MAGIA, DESLEAL, BLOQUEIO DO DUELISTA, PASAR A PERNA, MESTRE
+      EM MULTICLASSE."
+    movimentosAvancadosList:
+    - nome: "CAN\xC7\xC3O DA CURA"
+      descricao: Quando curar usando arte arcana, cure +1d8 de dano.
+    - nome: CACOFONIA VIOLENTA
+      descricao: "Quando conceder b\xF4nus para o dano usando arte arcana, conceda
+        +1d4 de dano extra."
+    - nome: "VOLUME M\xC1XIMO (CAR)"
+      descricao: "Quando desencadear uma performance ensandecida (um solo de flauta
+        inflamado, uma\r\nexplos\xE3o de tambores de bronze, uma dan\xE7a interpretativa
+        confusa), escolha um alvo capaz\r\nde ouvi-lo e role+CAR. Com 10+, o alvo
+        fica confuso e ataca seu aliado mais pr\xF3ximo. Com\r\n7-9, o alvo ainda
+        ataca seu aliado mais pr\xF3ximo, mas voc\xEA atrai sua aten\xE7\xE3o e sua
+        ira."
+    - nome: "GRITO MET\xC1LICO (CON)"
+      descricao: "Quando gritar com muita for\xE7a ou tocar uma nota devastadora,
+        escolha um alvo e\r\nrole+CON. Com 10+, o alvo recebe 1d10 de dano e \xE9
+        ensurdecido por alguns minutos.\r\nCom 7-9, voc\xEA ainda causa dano ao seu
+        alvo, mas perde o controle, e o MJ escolhe um alvo\r\nadicional que esteja
+        pr\xF3ximo."
+    - nome: UMA PEQUENA AJUDA DE MEUS AMIGOS
+      descricao: "Quando conseguir ajudar algu\xE9m, receba +1 adiante tamb\xE9m."
+    - nome: TONS SOBRENATURAIS
+      descricao: "Sua arte arcana \xE9 poderosa, permitindo que escolha dois efeitos
+        no lugar de apenas um."
+    - nome: "ROSTO INESQUEC\xCDVEL"
+      descricao: "Quando encontrar algu\xE9m com quem j\xE1 tenha se encontrado anteriormente
+        (decis\xE3o do\r\njogador) ap\xF3s terem passado algum tempo sem se ver, receba
+        +1 adiante contra essa pessoa."
+    - nome: APARO DO DUELISTA
+      descricao: Quando matar e pilhar, receba +1 adiante de armadura.
+    - nome: MISTIFICAR
+      descricao: "Quando negociar com um alvo, caso obtenha 7+, receba tamb\xE9m +1
+        adiante contra ele."
+    - nome: AMADOR EM MULTICLASSE
+      descricao: "Escolha e adquira um movimento de outra classe. Trate seu n\xEDvel
+        como se fosse n\xEDvel -1 no\r\nmomento da escolha."
+    - nome: INICIADO EM MULTICLASSE
+      descricao: "Escolha e adquira um movimento de outra classe. Trate seu n\xEDvel
+        como se fosse n\xEDvel -1 no\r\nmomento da escolha."
+    - nome: "REFR\xC3O DA CURA"
+      descricao: "Substitui: Can\xE7\xE3o da Cura\r\nQuando curar usando arte arcana,
+        cure +2d8 de dano."
+    - nome: "EXPLOS\xC3O SONORA VIOLENTA"
+      descricao: "Substitui: Cacofonia Violenta\r\nQuando conceder b\xF4nus para o
+        dano usando arte arcana, conceda +2d4 de dano extra."
+    - nome: "REPUTA\xC7\xC3O (CAR)"
+      descricao: "Quando encontrar pela primeira vez pessoas que j\xE1 tenham ouvido
+        can\xE7\xF5es a seu respeito,\r\nrole+CAR. Com 10+, diga ao MJ duas coisas
+        que elas saberiam a seu respeito. Com 7-9,\r\ndiga ao MJ uma coisa, e ele
+        dir\xE1 outra."
+    - nome: ACORDE SOBRENATURAL
+      descricao: "Substitui: Tons Sobrenaturais\r\nQuando usar arte arcana, escolha
+        dois efeitos no lugar de apenas um. Escolha tamb\xE9m um\r\ndesses dois efeitos
+        para ser aplicado em dobro."
+    - nome: OUVIDO BOM PARA MAGIA
+      descricao: "Quando ouvir um inimigo conjurar uma magia, o MJ lhe dir\xE1 qual
+        \xE9 o nome da magia e seus\r\nefeitos. Receba +1 adiante quando agir de acordo
+        com essas informa\xE7\xF5es."
+    - nome: DESLEAL
+      descricao: "Quando for charmoso(a) e receptivo(a), voc\xEA tamb\xE9m pode perguntar
+        \u201CComo voc\xEA seria\r\nvulner\xE1vel a mim?\u201D. Seu alvo n\xE3o pode
+        lhe fazer esta pergunta."
+    - nome: BLOQUEIO DO DUELISTA
+      descricao: "Substitui: Aparo do Duelista\r\nQuando matar e pilhar, receba +2
+        adiante de armadura."
+    - nome: PASSAR A PERNA
+      descricao: "Substitui: Mistificar\r\nQuando negociar com um alvo, com 7+, receba
+        tamb\xE9m +1 adiante contra ele e fa\xE7a ao seu\r\njogador uma pergunta que
+        deve ser respondida honestamente."
+    - nome: MESTRE EM MULTICLASSE
+      descricao: "Escolha e adquira um movimento de outra classe. Trate seu n\xEDvel
+        como se fosse n\xEDvel -1 no\r\nmomento da escolha."
+  - classe: 2
+    modificadorVida: 6
+    modificadorCarga: 9
+    dano: 6
+    alinhamentosList:
+    - alinhamentoEnum: 0
+      descricao: Executar sua arte para ajudar ...
+    - alinhamentoEnum: 2
+      descricao: "Evitar um conflito ou desfa\xE7a ..."
+    - alinhamentoEnum: 3
+      descricao: "Estimular outros a realizarem uma a\xE7\xE3o decisiva que seja significativa
+        e mal planejada."
+    racasList:
+    - racaEnum: 1
+      descricao: "Quando entrar em um local importante (decis\xE3o do\r\njogador),
+        voc\xEA pode pedir ao MJ que lhe conte um fato\r\nqualquer a respeito da hist\xF3ria
+        daquele lugar.\r"
+    - racaEnum: 0
+      descricao: "Quando entrar pela primeira vez em um local civilizado,\r\nalgu\xE9m
+        que respeita os costumes de hospitalidade aos\r\nmenestr\xE9is ir\xE1 receb\xEA-lo
+        como seu convidado.\r"
+    vinculoTemplate: "\u2022 Esta n\xE3o \xE9 minha primeira aventura com ____________.\r\n\u2022
+      J\xE1 cantei hist\xF3rias sobre ________________ bem antes\r\nde nos conhecermos
+      pessoalmente.\r\n\u2022 ________________ \xE9 normalmente o alvo de minhas\r\npiadas.\r\n\u2022
+      Estou escrevendo uma balada a respeito das aventuras\r\nde ________________.\r\n\u2022
+      ________________ me confidenciou um segredo.\r\n\u2022 ________________ n\xE3o
+      confia em mim, e com boas\r\nraz\xF5es.\r"
+    equipamentoDeComeco: "Voc\xEA possui ra\xE7\xF5es de masmorra\r\n(mmmmm, peso
+      1).\r\nEscolha um instrumento, todos eles possuem peso 0 para voc\xEA:\r\no
+      O bandolim restaurado de seu pai;\r\no Uma bela flauta, presente de um nobre;\r\no
+      A gaita com a qual cortejou seu primeiro amor;\r\no Uma corneta roubada;\r\no
+      Uma rabeca que nunca foi tocada;\r\no Um livro de can\xE7\xF5es, escrito em
+      uma l\xEDngua esquecida.\r\n\nEscolha sua roupa:\r\no Armadura de couro (armadura
+      1, peso 1);\r\no Roupas ostensivas (peso 0).\n\nEscolha seu armamento:\r\no
+      Florete de duelo (corpo a corpo, preciso, peso 2);\r\no Arco desgastado (pr\xF3ximo,
+      peso 2),\r\nFardo de flechas (muni\xE7\xE3o mmm, peso 1)\r\ne Espada curta (corpo
+      a corpo, Peso 1).\r\n\nEscolha um:\r\no Equipamento de aventureiro (mmmmm, peso
+      1);\r\no Bandagens (peso 0);\r\no Cachimbo Halfling (peso 0);\r\no 3 moedas."
+    textMovimentosIniciais: "Voc\xEA possui os seguintes movimentos iniciais:"
+    movimentosIniciaisList:
+    - nome: ARTE ARCANA
+      descricao: "Quando tecer um feiti\xE7o b\xE1sico a partir de uma performance,
+        escolha um\r\naliado e um efeito:\r\n\u2022 Curar 1d8 PV;\r\n\u2022 +1d4 adiante
+        para o dano;\r\n\u2022 Remover um encantamento que esteja afetando sua mente;\r\n\u2022
+        Na pr\xF3xima vez que algu\xE9m Ajudar o alvo, ele receber\xE1 +2, e n\xE3o
+        +1;\r\nE depois role+CAR. Com 10+, o aliado recebe o efeito selecionado. Com\r\n7-9,
+        sua magia funciona, mas voc\xEA atrai aten\xE7\xE3o indesej\xE1vel, ou a sua
+        magia\r\nreverbera para outros alvos \xE0 escolha do MJ, afetando-os tamb\xE9m.\r"
+    - nome: CONHECIMENTO DE BARDO
+      descricao: "Escolha uma \xE1rea de especializa\xE7\xE3o:\r\no Magias e Feiti\xE7os;\r\no
+        Os Mortos e os Mortos-Vivos;\r\no Grandes Hist\xF3rias do Mundo Conhecido;\r\no
+        Um Besti\xE1rio de Criaturas Incomuns;\r\no As Esferas Planares;\r\no Lendas
+        de Her\xF3is do Passado;\r\no Os Deuses e seus Servos;\r\nQuando encontrar
+        pela primeira vez uma criatura, local ou item importante\r\n(decis\xE3o do
+        jogador) que esteja ligado ao seu conhecimento de bardo, voc\xEA\r\npode fazer
+        uma pergunta qualquer ao MJ a respeito daquilo, que ele deve\r\nresponder
+        honestamente. O MJ pode lhe perguntar qual foi a lenda, can\xE7\xE3o\r\nou
+        f\xE1bula na qual voc\xEA ouviu tal informa\xE7\xE3o.\r\n"
+    - nome: CHARMOSO(A) E RECEPTIVO(A)
+      descricao: "Quando conversar francamente com algu\xE9m, voc\xEA pode fazer ao
+        seu jogador\r\numa pergunta da lista abaixo, que deve ser respondida com honestidade.\r\nAquele
+        jogador ent\xE3o poder\xE1 tamb\xE9m lhe fazer uma pergunta da lista abaixo\r\n(que
+        voc\xEA tamb\xE9m precisa responder honestamente):\r\n\u2022 A quem voc\xEA
+        serve?\r\n\u2022 O que voc\xEA quer que eu fa\xE7a?\r\n\u2022 Como fa\xE7o
+        para conseguir que voc\xEA ________________?\r\n\u2022 O que voc\xEA realmente
+        est\xE1 sentindo agora?\r\n\u2022 O que voc\xEA mais deseja?\r\nn UM PORTO
+        NA TEMPESTADE\r\nQuando retornar a um local civilizado que j\xE1 tenha visitado
+        previamente,\r\ndiga ao MJ quando esteve aqui pela \xFAltima vez. Ele lhe
+        responder\xE1 quais\r\nforam as mudan\xE7as ocorridas desde aquela \xE9poca.\r"
+    - nome: UM PORTO NA TEMPESTADE
+      descricao: "Quando retornar a um local civilizado que j\xE1 tenha visitado previamente,\r\ndiga
+        ao MJ quando esteve aqui pela \xFAltima vez. Ele lhe responder\xE1 quais\r\nforam
+        as mudan\xE7as ocorridas desde aquela \xE9poca.\r"
+    textMovimentosAvancados: "Quando ganhar um n\xEDvel entre 2 e 5, escolha um dos
+      seguintes movimentos:\nCAN\xC7\xC3O DA CURA, CACOFONIA VIOLENTA. VOLUME M\xC1XIMO
+      (CAR), GRITO MET\xC1LICO (CON), UMA PEQUENA AJUDA DE MEUS AMIGOS, TONS SOBRENATURAIS,
+      ROSTO INESQUEC\xCDVEL, APARO DO DUELISTA, MISTIFICAR, AMADOR EM MULTICLASSE,
+      INICIADO EM MULTICLASSE.\n\nQuando ganhar um n\xEDvel entre 6 e 10, escolha
+      um dos seguintes movimentos ou um dos\r\nmovimentos de n\xEDveis 2-5:\nREFR\xC3O
+      DA CURA, EXPLOS\xC3O SONORA VIOLENTA, REPUTA\xC7\xC3O, ACORDE SOBRENATURAL,
+      OUVIDO BOM PARA MAGIA, DESLEAL, BLOQUEIO DO DUELISTA, PASAR A PERNA, MESTRE
+      EM MULTICLASSE."
+    movimentosAvancadosList:
+    - nome: "CAN\xC7\xC3O DA CURA"
+      descricao: Quando curar usando arte arcana, cure +1d8 de dano.
+    - nome: CACOFONIA VIOLENTA
+      descricao: "Quando conceder b\xF4nus para o dano usando arte arcana, conceda
+        +1d4 de dano extra."
+    - nome: "VOLUME M\xC1XIMO (CAR)"
+      descricao: "Quando desencadear uma performance ensandecida (um solo de flauta
+        inflamado, uma\r\nexplos\xE3o de tambores de bronze, uma dan\xE7a interpretativa
+        confusa), escolha um alvo capaz\r\nde ouvi-lo e role+CAR. Com 10+, o alvo
+        fica confuso e ataca seu aliado mais pr\xF3ximo. Com\r\n7-9, o alvo ainda
+        ataca seu aliado mais pr\xF3ximo, mas voc\xEA atrai sua aten\xE7\xE3o e sua
+        ira."
+    - nome: "GRITO MET\xC1LICO (CON)"
+      descricao: "Quando gritar com muita for\xE7a ou tocar uma nota devastadora,
+        escolha um alvo e\r\nrole+CON. Com 10+, o alvo recebe 1d10 de dano e \xE9
+        ensurdecido por alguns minutos.\r\nCom 7-9, voc\xEA ainda causa dano ao seu
+        alvo, mas perde o controle, e o MJ escolhe um alvo\r\nadicional que esteja
+        pr\xF3ximo."
+    - nome: UMA PEQUENA AJUDA DE MEUS AMIGOS
+      descricao: "Quando conseguir ajudar algu\xE9m, receba +1 adiante tamb\xE9m."
+    - nome: TONS SOBRENATURAIS
+      descricao: "Sua arte arcana \xE9 poderosa, permitindo que escolha dois efeitos
+        no lugar de apenas um."
+    - nome: "ROSTO INESQUEC\xCDVEL"
+      descricao: "Quando encontrar algu\xE9m com quem j\xE1 tenha se encontrado anteriormente
+        (decis\xE3o do\r\njogador) ap\xF3s terem passado algum tempo sem se ver, receba
+        +1 adiante contra essa pessoa."
+    - nome: APARO DO DUELISTA
+      descricao: Quando matar e pilhar, receba +1 adiante de armadura.
+    - nome: MISTIFICAR
+      descricao: "Quando negociar com um alvo, caso obtenha 7+, receba tamb\xE9m +1
+        adiante contra ele."
+    - nome: AMADOR EM MULTICLASSE
+      descricao: "Escolha e adquira um movimento de outra classe. Trate seu n\xEDvel
+        como se fosse n\xEDvel -1 no\r\nmomento da escolha."
+    - nome: INICIADO EM MULTICLASSE
+      descricao: "Escolha e adquira um movimento de outra classe. Trate seu n\xEDvel
+        como se fosse n\xEDvel -1 no\r\nmomento da escolha."
+    - nome: "REFR\xC3O DA CURA"
+      descricao: "Substitui: Can\xE7\xE3o da Cura\r\nQuando curar usando arte arcana,
+        cure +2d8 de dano."
+    - nome: "EXPLOS\xC3O SONORA VIOLENTA"
+      descricao: "Substitui: Cacofonia Violenta\r\nQuando conceder b\xF4nus para o
+        dano usando arte arcana, conceda +2d4 de dano extra."
+    - nome: "REPUTA\xC7\xC3O (CAR)"
+      descricao: "Quando encontrar pela primeira vez pessoas que j\xE1 tenham ouvido
+        can\xE7\xF5es a seu respeito,\r\nrole+CAR. Com 10+, diga ao MJ duas coisas
+        que elas saberiam a seu respeito. Com 7-9,\r\ndiga ao MJ uma coisa, e ele
+        dir\xE1 outra."
+    - nome: ACORDE SOBRENATURAL
+      descricao: "Substitui: Tons Sobrenaturais\r\nQuando usar arte arcana, escolha
+        dois efeitos no lugar de apenas um. Escolha tamb\xE9m um\r\ndesses dois efeitos
+        para ser aplicado em dobro."
+    - nome: OUVIDO BOM PARA MAGIA
+      descricao: "Quando ouvir um inimigo conjurar uma magia, o MJ lhe dir\xE1 qual
+        \xE9 o nome da magia e seus\r\nefeitos. Receba +1 adiante quando agir de acordo
+        com essas informa\xE7\xF5es."
+    - nome: DESLEAL
+      descricao: "Quando for charmoso(a) e receptivo(a), voc\xEA tamb\xE9m pode perguntar
+        \u201CComo voc\xEA seria\r\nvulner\xE1vel a mim?\u201D. Seu alvo n\xE3o pode
+        lhe fazer esta pergunta."
+    - nome: BLOQUEIO DO DUELISTA
+      descricao: "Substitui: Aparo do Duelista\r\nQuando matar e pilhar, receba +2
+        adiante de armadura."
+    - nome: PASSAR A PERNA
+      descricao: "Substitui: Mistificar\r\nQuando negociar com um alvo, com 7+, receba
+        tamb\xE9m +1 adiante contra ele e fa\xE7a ao seu\r\njogador uma pergunta que
+        deve ser respondida honestamente."
+    - nome: MESTRE EM MULTICLASSE
+      descricao: "Escolha e adquira um movimento de outra classe. Trate seu n\xEDvel
+        como se fosse n\xEDvel -1 no\r\nmomento da escolha."
 --- !u!1 &1182794277
 GameObject:
   m_ObjectHideFlags: 0
