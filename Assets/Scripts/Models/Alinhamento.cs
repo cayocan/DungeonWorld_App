@@ -12,6 +12,7 @@ public class Alinhamento
     public enum Alinhamentos
     {
         Bom,
+        Ordeiro,
         Leal,
         Neutro,
         Caótico,

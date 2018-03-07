@@ -11477,9 +11477,9 @@ MonoBehaviour:
     modificadorCarga: 8
     dano: 10
     alinhamentosList:
-    - alinhamentoEnum: 2
-      descricao: "Ensinar a algu\xE9m os modos de seu povo."
     - alinhamentoEnum: 3
+      descricao: "Ensinar a algu\xE9m os modos de seu povo."
+    - alinhamentoEnum: 4
       descricao: "Se afastar de uma conven\xE7\xE3o do mundo civilizado."
     racasList:
     - racaEnum: 0
@@ -11646,9 +11646,9 @@ MonoBehaviour:
     alinhamentosList:
     - alinhamentoEnum: 0
       descricao: Executar sua arte para ajudar ...
-    - alinhamentoEnum: 2
-      descricao: "Evitar um conflito ou desfa\xE7a ..."
     - alinhamentoEnum: 3
+      descricao: "Evitar um conflito ou desfa\xE7a ..."
+    - alinhamentoEnum: 4
       descricao: "Estimular outros a realizarem uma a\xE7\xE3o decisiva que seja significativa
         e mal planejada."
     racasList:
@@ -11794,159 +11794,175 @@ MonoBehaviour:
       descricao: "Escolha e adquira um movimento de outra classe. Trate seu n\xEDvel
         como se fosse n\xEDvel -1 no\r\nmomento da escolha."
   - classe: 2
-    modificadorVida: 6
-    modificadorCarga: 9
+    modificadorVida: 8
+    modificadorCarga: 10
     dano: 6
     alinhamentosList:
     - alinhamentoEnum: 0
-      descricao: Executar sua arte para ajudar ...
-    - alinhamentoEnum: 2
-      descricao: "Evitar um conflito ou desfa\xE7a ..."
-    - alinhamentoEnum: 3
-      descricao: "Estimular outros a realizarem uma a\xE7\xE3o decisiva que seja significativa
-        e mal planejada."
+      descricao: Colocar-se em perigo para curar outra pessoa.
+    - alinhamentoEnum: 1
+      descricao: "Colocar-se em perigo seguindo os preceitos de sua igreja\r\nou deus."
+    - alinhamentoEnum: 5
+      descricao: "Prejudicar outra pessoa para provar a superioridade de\r\nsua igreja
+        ou deus.\r"
     racasList:
-    - racaEnum: 1
-      descricao: "Quando entrar em um local importante (decis\xE3o do\r\njogador),
-        voc\xEA pode pedir ao MJ que lhe conte um fato\r\nqualquer a respeito da hist\xF3ria
-        daquele lugar.\r"
+    - racaEnum: 2
+      descricao: "Voc\xEA \xE9 um com a pedra. Quando comungar, receba\r\ncomo uma
+        ora\xE7\xE3o uma vers\xE3o especial de Palavras dos\r\nSilenciosos que s\xF3
+        funciona com pedras.\r"
     - racaEnum: 0
-      descricao: "Quando entrar pela primeira vez em um local civilizado,\r\nalgu\xE9m
-        que respeita os costumes de hospitalidade aos\r\nmenestr\xE9is ir\xE1 receb\xEA-lo
-        como seu convidado.\r"
-    vinculoTemplate: "\u2022 Esta n\xE3o \xE9 minha primeira aventura com ____________.\r\n\u2022
-      J\xE1 cantei hist\xF3rias sobre ________________ bem antes\r\nde nos conhecermos
-      pessoalmente.\r\n\u2022 ________________ \xE9 normalmente o alvo de minhas\r\npiadas.\r\n\u2022
-      Estou escrevendo uma balada a respeito das aventuras\r\nde ________________.\r\n\u2022
-      ________________ me confidenciou um segredo.\r\n\u2022 ________________ n\xE3o
-      confia em mim, e com boas\r\nraz\xF5es.\r"
-    equipamentoDeComeco: "Voc\xEA possui ra\xE7\xF5es de masmorra\r\n(mmmmm, peso
-      1).\r\nEscolha um instrumento, todos eles possuem peso 0 para voc\xEA:\r\no
-      O bandolim restaurado de seu pai;\r\no Uma bela flauta, presente de um nobre;\r\no
-      A gaita com a qual cortejou seu primeiro amor;\r\no Uma corneta roubada;\r\no
-      Uma rabeca que nunca foi tocada;\r\no Um livro de can\xE7\xF5es, escrito em
-      uma l\xEDngua esquecida.\r\n\nEscolha sua roupa:\r\no Armadura de couro (armadura
-      1, peso 1);\r\no Roupas ostensivas (peso 0).\n\nEscolha seu armamento:\r\no
-      Florete de duelo (corpo a corpo, preciso, peso 2);\r\no Arco desgastado (pr\xF3ximo,
-      peso 2),\r\nFardo de flechas (muni\xE7\xE3o mmm, peso 1)\r\ne Espada curta (corpo
-      a corpo, Peso 1).\r\n\nEscolha um:\r\no Equipamento de aventureiro (mmmmm, peso
-      1);\r\no Bandagens (peso 0);\r\no Cachimbo Halfling (peso 0);\r\no 3 moedas."
+      descricao: "Sua f\xE9 \xE9 distinta. Escolha um feiti\xE7o de mago: voc\xEA\r\npode
+        receb\xEA-lo e conjur\xE1-lo como se fosse um feiti\xE7o de\r\ncl\xE9rigo.\r"
+    vinculoTemplate: "\u2022 ________________________ insultou minha divindade;\r\neu
+      n\xE3o confio nele.\r\n\u2022 __________________________ \xE9 uma pessoa boa
+      e fiel;\r\neu confio nele implicitamente.\r\n\u2022 ______________________ est\xE1
+      em constantemente em\r\nperigo, mas o(a) manterei a salvo.\r\n\u2022 Estou trabalhando
+      para converter __________________\r\n\xE0 minha f\xE9.\r"
+    equipamentoDeComeco: "Voc\xEA possui ra\xE7\xF5es de masmorra (5, peso\r 1) e
+      o s\xEDmbolo sagrado de sua divindade \u2013 Descreva-o (peso 0). Escolha suas
+      defesas:\r\no Cota de malha (armadura 1, peso 1)\r\no Escudo (armadura +1, peso
+      2)\r\n\nEscolha seu armamento:\r\no Martelo de batalha (corpo a corpo, peso
+      1)\r\no Ma\xE7a (corpo a corpo, peso 1)\r\no Cajado (corpo a corpo, duas m\xE3os,
+      peso 1) e bandagens (peso 0)\n\nEscolha um:\r\no Equipamento de aventureiro
+      (5, peso 1)\r\ne ra\xE7\xF5es de masmorra (5, peso 1)\r\no Po\xE7\xE3o de cura
+      (1, peso 0)"
     textMovimentosIniciais: "Voc\xEA possui os seguintes movimentos iniciais:"
     movimentosIniciaisList:
-    - nome: ARTE ARCANA
-      descricao: "Quando tecer um feiti\xE7o b\xE1sico a partir de uma performance,
-        escolha um\r\naliado e um efeito:\r\n\u2022 Curar 1d8 PV;\r\n\u2022 +1d4 adiante
-        para o dano;\r\n\u2022 Remover um encantamento que esteja afetando sua mente;\r\n\u2022
-        Na pr\xF3xima vez que algu\xE9m Ajudar o alvo, ele receber\xE1 +2, e n\xE3o
-        +1;\r\nE depois role+CAR. Com 10+, o aliado recebe o efeito selecionado. Com\r\n7-9,
-        sua magia funciona, mas voc\xEA atrai aten\xE7\xE3o indesej\xE1vel, ou a sua
-        magia\r\nreverbera para outros alvos \xE0 escolha do MJ, afetando-os tamb\xE9m.\r"
-    - nome: CONHECIMENTO DE BARDO
-      descricao: "Escolha uma \xE1rea de especializa\xE7\xE3o:\r\no Magias e Feiti\xE7os;\r\no
-        Os Mortos e os Mortos-Vivos;\r\no Grandes Hist\xF3rias do Mundo Conhecido;\r\no
-        Um Besti\xE1rio de Criaturas Incomuns;\r\no As Esferas Planares;\r\no Lendas
-        de Her\xF3is do Passado;\r\no Os Deuses e seus Servos;\r\nQuando encontrar
-        pela primeira vez uma criatura, local ou item importante\r\n(decis\xE3o do
-        jogador) que esteja ligado ao seu conhecimento de bardo, voc\xEA\r\npode fazer
-        uma pergunta qualquer ao MJ a respeito daquilo, que ele deve\r\nresponder
-        honestamente. O MJ pode lhe perguntar qual foi a lenda, can\xE7\xE3o\r\nou
-        f\xE1bula na qual voc\xEA ouviu tal informa\xE7\xE3o.\r\n"
-    - nome: CHARMOSO(A) E RECEPTIVO(A)
-      descricao: "Quando conversar francamente com algu\xE9m, voc\xEA pode fazer ao
-        seu jogador\r\numa pergunta da lista abaixo, que deve ser respondida com honestidade.\r\nAquele
-        jogador ent\xE3o poder\xE1 tamb\xE9m lhe fazer uma pergunta da lista abaixo\r\n(que
-        voc\xEA tamb\xE9m precisa responder honestamente):\r\n\u2022 A quem voc\xEA
-        serve?\r\n\u2022 O que voc\xEA quer que eu fa\xE7a?\r\n\u2022 Como fa\xE7o
-        para conseguir que voc\xEA ________________?\r\n\u2022 O que voc\xEA realmente
-        est\xE1 sentindo agora?\r\n\u2022 O que voc\xEA mais deseja?\r\nn UM PORTO
-        NA TEMPESTADE\r\nQuando retornar a um local civilizado que j\xE1 tenha visitado
-        previamente,\r\ndiga ao MJ quando esteve aqui pela \xFAltima vez. Ele lhe
-        responder\xE1 quais\r\nforam as mudan\xE7as ocorridas desde aquela \xE9poca.\r"
-    - nome: UM PORTO NA TEMPESTADE
-      descricao: "Quando retornar a um local civilizado que j\xE1 tenha visitado previamente,\r\ndiga
-        ao MJ quando esteve aqui pela \xFAltima vez. Ele lhe responder\xE1 quais\r\nforam
-        as mudan\xE7as ocorridas desde aquela \xE9poca.\r"
+    - nome: DIVINDADE
+      descricao: "Voc\xEA serve e adora uma divindade ou poder que lhe concede feiti\xE7os.
+        D\xEA um nome ao seu\r\ndeus (talvez Helferth, Sucellus, Zorica ou Krugon
+        o Cruel) e escolha seu dom\xEDnio:\r\no Cura e Restaura\xE7\xE3o;\r\no Conquista
+        Sangrenta;\r\no Civiliza\xE7\xE3o;\r\no Conhecimento e Coisas Ocultas;\r\no
+        Os Oprimidos e Esquecidos;\r\no O Que Existe Abaixo.\n\nEscolha um preceito
+        de sua religi\xE3o:\r\no Sua religi\xE3o prega a santidade do sofrimento.
+        Adicione S\xFAplica: Sofrimento;\r\no Sua religi\xE3o \xE9 cultista e insular.
+        Adicione S\xFAplica: Ganhando Segredos;\r\no Sua religi\xE3o possui importantes
+        rituais de sacrif\xEDcio. Adicione S\xFAplica: Oferenda;\r\no Sua religi\xE3o
+        acredita em julgamento pelo combate. Adicione S\xFAplica: Vit\xF3ria Pessoal."
+    - nome: "ORIENTA\xC7\xC3O DIVINA"
+      descricao: "Quando fizer uma s\xFAplica adequada aos preceitos de sua religi\xE3o,
+        sua divindade lhe\r\nconceder\xE1 algum conhecimento \xFAtil ou benef\xEDcio
+        relacionado aos seus dom\xEDnios. O MJ lhe\r\ndir\xE1 qual."
+    - nome: EXPULSAR MORTOS-VIVOS
+      descricao: "Quando erguer seu s\xEDmbolo sagrado e chamar por sua divindade
+        em busca de prote\xE7\xE3o,\r\nrole+SAB. Com 7-9, enquanto continuar brandindo
+        seu s\xEDmbolo sagrado em ora\xE7\xE3o,\r\nnenhum morto-vivo poder\xE1 se
+        aproximar de voc\xEA. Com 10+, mortos-vivos inteligentes ficam\r\nmomentaneamente
+        ofuscados, e mortos-vivos sem mente fogem. Qualquer agress\xE3o quebra\r\neste
+        efeito e as criaturas podem voltar a agir normalmente. Mortos-vivos inteligentes
+        ainda\r\npodem encontrar meios de lhe causar mal \xE0 dist\xE2ncia. Eles s\xE3o
+        espertos assim."
+    - nome: COMUNGAR
+      descricao: "Quando passar algum tempo ininterrupto em silenciosa comunh\xE3o
+        com sua divindade\r\n(uma hora, aproximadamente), voc\xEA:\r\n\u2022 Perde
+        todos os feiti\xE7os que lhe foram concedidos.\r\n\u2022 Recebe novos feiti\xE7os
+        \xE0 sua escolha, cujo total de n\xEDveis n\xE3o supere seu pr\xF3prio n\xEDvel+1.
+        O\r\nn\xEDvel de nenhum deles pode superar o seu.\r\n\u2022 Prepare todas
+        as suas ora\xE7\xF5es \u2013 elas n\xE3o contam para o limite acima. "
+    - nome: "CONJURAR FEITI\xC7OS"
+      descricao: "Quando conjurar um feiti\xE7o conferido a voc\xEA por sua divindade,
+        role+SAB. Com 10+, o\r\nfeiti\xE7o \xE9 conjurado com sucesso e sua divindade
+        n\xE3o o revoga, logo, voc\xEA poder\xE1\r\nconjur\xE1-lo novamente. Com 7-9,
+        o feiti\xE7o \xE9 conjurado, mas escolha um:\r\n\u2022 Voc\xEA atrai aten\xE7\xE3o
+        indesejada ou se coloca em evid\xEAncia (o MJ descrever\xE1 como);\r\n\u2022
+        Sua conjura\xE7\xE3o lhe distancia de sua divindade \u2013 receba -1 constante
+        em conjurar\r\nfeiti\xE7os at\xE9 a pr\xF3xima vez que comungar novamente;\r\n\u2022
+        Ap\xF3s conjurar o feiti\xE7o, ele \xE9 revogado por sua divindade. Voc\xEA
+        n\xE3o pode conjur\xE1-lo\r\nnovamente at\xE9 comungar e receb\xEA-lo novamente.\r\nRepare
+        que a manuten\xE7\xE3o de feiti\xE7os com efeitos cont\xEDnuos poder\xE1 lhe
+        causar penalidades em\r\nsua jogada de conjurar feiti\xE7os em alguns casos. "
     textMovimentosAvancados: "Quando ganhar um n\xEDvel entre 2 e 5, escolha um dos
-      seguintes movimentos:\nCAN\xC7\xC3O DA CURA, CACOFONIA VIOLENTA. VOLUME M\xC1XIMO
-      (CAR), GRITO MET\xC1LICO (CON), UMA PEQUENA AJUDA DE MEUS AMIGOS, TONS SOBRENATURAIS,
-      ROSTO INESQUEC\xCDVEL, APARO DO DUELISTA, MISTIFICAR, AMADOR EM MULTICLASSE,
-      INICIADO EM MULTICLASSE.\n\nQuando ganhar um n\xEDvel entre 6 e 10, escolha
-      um dos seguintes movimentos ou um dos\r\nmovimentos de n\xEDveis 2-5:\nREFR\xC3O
-      DA CURA, EXPLOS\xC3O SONORA VIOLENTA, REPUTA\xC7\xC3O, ACORDE SOBRENATURAL,
-      OUVIDO BOM PARA MAGIA, DESLEAL, BLOQUEIO DO DUELISTA, PASAR A PERNA, MESTRE
-      EM MULTICLASSE."
+      seguintes movimentos:\nO ESCOLHIDO, REVIGORAR, O EQUIL\xCDBRIO ENTRE A VIDA
+      E A MORTE, SERENIDADE, PRIMEIROS SOCORROS, INTERVEN\xC7\xC3O DIVINA, PENITENTE,
+      POTENCIALIZAR, PRECE POR ORIENTA\xC7\xC3O, PROTE\xC7\xC3O DIVINA, CURANDEIRO
+      DEVOTO, AMADOR EM MULTICLASSE.\n\nQuando ganhar um n\xEDvel entre 6 e 10, escolha
+      um dos seguintes movimentos ou um dos\r\nmovimentos de n\xEDveis 2-5:\nABEN\xC7OADO,
+      APOTEOSE, CEIFADOR, PROVID\xCANCIA, PRIMEIROS SOCORROS SUPERIORES, INVENCIBILIDADE
+      DIVINA, M\xC1RTIR, ARMADURA DIVINA, POTENCIALIZAR SUPERIOR."
     movimentosAvancadosList:
-    - nome: "CAN\xC7\xC3O DA CURA"
-      descricao: Quando curar usando arte arcana, cure +1d8 de dano.
-    - nome: CACOFONIA VIOLENTA
-      descricao: "Quando conceder b\xF4nus para o dano usando arte arcana, conceda
-        +1d4 de dano extra."
-    - nome: "VOLUME M\xC1XIMO (CAR)"
-      descricao: "Quando desencadear uma performance ensandecida (um solo de flauta
-        inflamado, uma\r\nexplos\xE3o de tambores de bronze, uma dan\xE7a interpretativa
-        confusa), escolha um alvo capaz\r\nde ouvi-lo e role+CAR. Com 10+, o alvo
-        fica confuso e ataca seu aliado mais pr\xF3ximo. Com\r\n7-9, o alvo ainda
-        ataca seu aliado mais pr\xF3ximo, mas voc\xEA atrai sua aten\xE7\xE3o e sua
-        ira."
-    - nome: "GRITO MET\xC1LICO (CON)"
-      descricao: "Quando gritar com muita for\xE7a ou tocar uma nota devastadora,
-        escolha um alvo e\r\nrole+CON. Com 10+, o alvo recebe 1d10 de dano e \xE9
-        ensurdecido por alguns minutos.\r\nCom 7-9, voc\xEA ainda causa dano ao seu
-        alvo, mas perde o controle, e o MJ escolhe um alvo\r\nadicional que esteja
-        pr\xF3ximo."
-    - nome: UMA PEQUENA AJUDA DE MEUS AMIGOS
-      descricao: "Quando conseguir ajudar algu\xE9m, receba +1 adiante tamb\xE9m."
-    - nome: TONS SOBRENATURAIS
-      descricao: "Sua arte arcana \xE9 poderosa, permitindo que escolha dois efeitos
-        no lugar de apenas um."
-    - nome: "ROSTO INESQUEC\xCDVEL"
-      descricao: "Quando encontrar algu\xE9m com quem j\xE1 tenha se encontrado anteriormente
-        (decis\xE3o do\r\njogador) ap\xF3s terem passado algum tempo sem se ver, receba
-        +1 adiante contra essa pessoa."
-    - nome: APARO DO DUELISTA
-      descricao: Quando matar e pilhar, receba +1 adiante de armadura.
-    - nome: MISTIFICAR
-      descricao: "Quando negociar com um alvo, caso obtenha 7+, receba tamb\xE9m +1
-        adiante contra ele."
+    - nome: O ESCOLHIDO
+      descricao: "Escolha um feiti\xE7o. Ele lhe \xE9 concedido como se fosse 1 n\xEDvel
+        menor"
+    - nome: REVIGORAR
+      descricao: "Quando curar algu\xE9m, essa pessoa receber\xE1 +2 adiante em seu
+        dano"
+    - nome: "O EQUIL\xCDBRIO ENTRE A VIDA E A MORTE"
+      descricao: "Quando algu\xE9m tomar seu \xFAltimo suspiro em sua presen\xE7a,
+        essa pessoa receber\xE1 +1\r\nna rolagem."
+    - nome: SERENIDADE
+      descricao: "Quando conjurar um feiti\xE7o, ignore -1 de penalidade relacionada
+        a feiti\xE7os cont\xEDnuos."
+    - nome: PRIMEIROS SOCORROS
+      descricao: "Curar Ferimentos Leves \xE9 considerado uma ora\xE7\xE3o para voc\xEA,
+        logo, n\xE3o conta para o\r\nseu limite de feiti\xE7os concedidos"
+    - nome: "INTERVEN\xC7\xC3O DIVINA"
+      descricao: "Quando comungar, receba dom\xEDnio 1 e perca todo o dom\xEDnio que
+        possu\xEDa. Gaste esse\r\ndom\xEDnio quando voc\xEA ou um aliado receber dano
+        para invocar sua divindade. Ela ir\xE1\r\nintervir atrav\xE9s de uma manifesta\xE7\xE3o
+        adequada (uma ventania s\xFAbita, um escorreg\xE3o\r\nsortudo, uma explos\xE3o
+        de luz) e negar todo o dano."
+    - nome: PENITENTE
+      descricao: "Quando receber dano e abra\xE7ar a dor, voc\xEA pode sofrer +1d4
+        de dano (ignorando\r\narmadura). Caso o fa\xE7a, receba +1 adiante para conjurar
+        feiti\xE7os"
+    - nome: POTENCIALIZAR
+      descricao: "Quando conjurar um feiti\xE7o, com 10+ voc\xEA pode optar por escolher
+        um item da lista\r\nde 7-9. Caso o fa\xE7a, escolha tamb\xE9m um dos efeitos
+        abaixo:\r\n\u2022 Os efeitos da magia s\xE3o dobrados\r\n\u2022 Os alvos da
+        magia s\xE3o dobrados"
+    - nome: "PRECE POR ORIENTA\xC7\xC3O"
+      descricao: "Quando sacrificar algo de valor para sua divindade e rezar pedindo
+        por sua\r\norienta\xE7\xE3o, sua divindade lhe dir\xE1 o que ela quer que
+        voc\xEA fa\xE7a. Se voc\xEA o fizer,\r\nmarque experi\xEAncia."
+    - nome: "PROTE\xC7\xC3O DIVINA"
+      descricao: "Quando n\xE3o estiver usando armadura ou escudo, receba armadura
+        2."
+    - nome: CURANDEIRO DEVOTO
+      descricao: "Quando curar outra pessoa, adicione seu n\xEDvel \xE0 quantidade
+        de dano curado."
     - nome: AMADOR EM MULTICLASSE
       descricao: "Escolha e adquira um movimento de outra classe. Trate seu n\xEDvel
-        como se fosse n\xEDvel -1 no\r\nmomento da escolha."
-    - nome: INICIADO EM MULTICLASSE
-      descricao: "Escolha e adquira um movimento de outra classe. Trate seu n\xEDvel
-        como se fosse n\xEDvel -1 no\r\nmomento da escolha."
-    - nome: "REFR\xC3O DA CURA"
-      descricao: "Substitui: Can\xE7\xE3o da Cura\r\nQuando curar usando arte arcana,
-        cure +2d8 de dano."
-    - nome: "EXPLOS\xC3O SONORA VIOLENTA"
-      descricao: "Substitui: Cacofonia Violenta\r\nQuando conceder b\xF4nus para o
-        dano usando arte arcana, conceda +2d4 de dano extra."
-    - nome: "REPUTA\xC7\xC3O (CAR)"
-      descricao: "Quando encontrar pela primeira vez pessoas que j\xE1 tenham ouvido
-        can\xE7\xF5es a seu respeito,\r\nrole+CAR. Com 10+, diga ao MJ duas coisas
-        que elas saberiam a seu respeito. Com 7-9,\r\ndiga ao MJ uma coisa, e ele
-        dir\xE1 outra."
-    - nome: ACORDE SOBRENATURAL
-      descricao: "Substitui: Tons Sobrenaturais\r\nQuando usar arte arcana, escolha
-        dois efeitos no lugar de apenas um. Escolha tamb\xE9m um\r\ndesses dois efeitos
-        para ser aplicado em dobro."
-    - nome: OUVIDO BOM PARA MAGIA
-      descricao: "Quando ouvir um inimigo conjurar uma magia, o MJ lhe dir\xE1 qual
-        \xE9 o nome da magia e seus\r\nefeitos. Receba +1 adiante quando agir de acordo
-        com essas informa\xE7\xF5es."
-    - nome: DESLEAL
-      descricao: "Quando for charmoso(a) e receptivo(a), voc\xEA tamb\xE9m pode perguntar
-        \u201CComo voc\xEA seria\r\nvulner\xE1vel a mim?\u201D. Seu alvo n\xE3o pode
-        lhe fazer esta pergunta."
-    - nome: BLOQUEIO DO DUELISTA
-      descricao: "Substitui: Aparo do Duelista\r\nQuando matar e pilhar, receba +2
-        adiante de armadura."
-    - nome: PASSAR A PERNA
-      descricao: "Substitui: Mistificar\r\nQuando negociar com um alvo, com 7+, receba
-        tamb\xE9m +1 adiante contra ele e fa\xE7a ao seu\r\njogador uma pergunta que
-        deve ser respondida honestamente."
-    - nome: MESTRE EM MULTICLASSE
-      descricao: "Escolha e adquira um movimento de outra classe. Trate seu n\xEDvel
-        como se fosse n\xEDvel -1 no\r\nmomento da escolha."
+        como se fosse 1\r\nmenor no momento da escolha"
+    - nome: "ABEN\xC7OADO"
+      descricao: "Requer: O Escolhido\r\nEscolha um feiti\xE7o diferente daquele j\xE1
+        selecionado anteriormente. Ele lhe \xE9\r\nconcedido como se fosse 1 n\xEDvel
+        menor"
+    - nome: APOTEOSE
+      descricao: "Na pr\xF3xima vez que passar algum tempo em ora\xE7\xE3o apropriada
+        para seu deus\r\nap\xF3s optar por este movimento, escolha uma caracter\xEDstica
+        associada a ele (garras\r\ndilaceradoras, asas de penas de safira, um terceiro
+        olho que tudo v\xEA, etc.). Assim que\r\nemergir de suas preces, ganhe permanentemente
+        tal caracter\xEDstica f\xEDsica"
+    - nome: CEIFADOR
+      descricao: "Quando parar um momento ap\xF3s um conflito para dedicar sua vit\xF3ria
+        \xE0 sua divindade\r\ne lidar adequadamente com os mortos, receba +1 adiante."
+    - nome: "PROVID\xCANCIA"
+      descricao: "Substitui: Serenidade\r\nIgnore a penalidade de -1 proveniente de
+        dois feiti\xE7os que esteja mantendo."
+    - nome: PRIMEIROS SOCORROS SUPERIORES
+      descricao: "Requer: Primeiros Socorros\r\nCurar Ferimentos Moderados \xE9 considerado
+        uma ora\xE7\xE3o para voc\xEA, logo, n\xE3o conta\r\npara o seu limite de
+        feiti\xE7os concedidos."
+    - nome: INVENCIBILIDADE DIVINA
+      descricao: "Substitui: Interven\xE7\xE3o Divina\r\nQuando comungar, receba dom\xEDnio
+        2 e perca todo o dom\xEDnio que possu\xEDa. Gaste 1\r\ndom\xEDnio quando voc\xEA
+        ou um aliado receber dano para invocar sua divindade. Ela ir\xE1\r\nintervir
+        atrav\xE9s de uma manifesta\xE7\xE3o adequada (uma ventania s\xFAbita, um
+        escorreg\xE3o\r\nsortudo, uma explos\xE3o de luz) e negar todo o dano"
+    - nome: "M\xC1RTIR"
+      descricao: "Substitui: Penitente\r\nQuando receber dano e abra\xE7ar a dor,
+        voc\xEA pode sofrer +1d4 de dano (ignorando\r\narmadura). Caso o fa\xE7a,
+        receba +1 adiante para conjurar feiti\xE7os e some seu n\xEDvel ao\r\ndano
+        causado ou curado por ele"
+    - nome: ARMADURA DIVINA
+      descricao: "Substitui: Prote\xE7\xE3o Divina\r\nQuando n\xE3o estiver usando
+        armadura ou escudo, receba armadura 3."
+    - nome: POTENCIALIZAR SUPERIOR
+      descricao: "Substitui: Potencializar\r\nQuando conjurar um feiti\xE7o, com 10+
+        voc\xEA pode optar por escolher um item da lista\r\nde 7-9. Caso o fa\xE7a,
+        escolha um dos efeitos abaixo tamb\xE9m. Com 12+, escolha um\r\ndesses efeitos
+        de gra\xE7a:\r\n\u2022 Os efeitos da magia s\xE3o dobrados\r\n\u2022 Os alvos
+        da magia s\xE3o dobrados"
 --- !u!1 &1182794277
 GameObject:
   m_ObjectHideFlags: 0
